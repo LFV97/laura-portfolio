@@ -1,0 +1,26 @@
+{
+    "switchTheme": "Cambiar a",
+    "rpgMode": "Modo RPG",
+    "classicMode": "Modo Clásico",
+    "welcomeClassic": "Bienvenido a mi portafolio en un diseño limpio y profesional.",
+    "welcomeRPG": "Esta es la versión con temática RPG de mi portafolio.",
+    "language": "English",
+    "chooseMode": "Elige un modo",
+    "changeMode": "Cambiar Modo",
+    "menu": {
+      "about": "📜 About",
+      "lore": "📖 Lore",
+      "skills": "⚔️ Skills",
+      "resume": "📂 Resume",
+      "projects": "🔥 Projects"
+    },
+    "hud": {
+      "title": "🎮 RPG Portfolio UI"
+    },
+    "sections": {
+      "projects": "🔥 My Projects",
+      "lore": "📖 My Journey",
+      "resume": "📂 My Resume"
+    }
+  }
+  

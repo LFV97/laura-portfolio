@@ -1,0 +1,21 @@
+/* .rpg-container {
+    border: 15px solid transparent;
+    border-image-source: url('/path-to-your-border-image.png');
+    border-image-slice: 30;
+    border-image-repeat: stretch;
+    background-color: #f3e0c0;
+    padding: 20px;
+    border-radius: 15px; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+   */
+
+   .rpg-container {
+    border: 10px solid;
+    border-image-source: linear-gradient(to right, #8b4513, #a0522d);
+    border-image-slice: 1;
+    background-color: #f3e0c0;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
