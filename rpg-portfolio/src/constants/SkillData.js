@@ -35,7 +35,7 @@ const skillData = [
   // { id: "csharp", name: "C#", position: [3, 2, 0], unlocked: true, color: "purple", icon: "/icons/c-sharp.png" }
   { id: "python", name:"Python",  position: [-0.35, 0.3, 0], unlocked: true, color: "white", icon: "/icons/python.png" },
   { id: "csharp", name:"C#",  position: [0.35, 0.3, 0], unlocked: true, color: "white", icon: "/icons/c-sharp.png" },
-  { id: ".NET", name:".NET",  position: [1, 0.3, 0], unlocked: true, color: "white", icon: "/icons/dot-net.png" },
+  { id: "dotnet", name:".NET",  position: [1, 0.3, 0], unlocked: true, color: "white", icon: "/icons/dot-net.png" },
   { id: "entity", name:"Entity Framework",  position: [0.65, -0.3, 0], unlocked: true, color: "white", icon: "/icons/entity.png" },
   { id: "azure", name:"Azure",  position: [1.3, -0.3, 0], unlocked: true, color: "white", icon: "/icons/azure.png" },
 

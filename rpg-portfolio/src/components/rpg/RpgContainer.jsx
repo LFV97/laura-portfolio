@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import RpgHud from "./RpgHud";
 import RpgMenu from "./RpgMenu";
 import RpgProfile from "./RpgProfile";
-import RpgSkills from "./RpgSkills";
+import RpgSkills from "./skills/RpgSkills";
 import "../../styles/rpg.css";
 
 export default function RpgContainer() {
