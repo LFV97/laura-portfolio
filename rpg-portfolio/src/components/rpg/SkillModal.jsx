@@ -7,7 +7,7 @@ export default function SkillModal({ skill, onClose }) {
   
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-96">
+        <div className="bg-gray-900 p-6 rounded-lg shadow-lg w-100">
           <h2 className="text-xl font-bold text-yellow-400">{skill}</h2>
           <ul className="mt-4 space-y-2">
             {skillDetails[skill]?.map((framework) => (
