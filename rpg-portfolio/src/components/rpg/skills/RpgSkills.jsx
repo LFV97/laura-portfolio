@@ -27,7 +27,7 @@ export default function SkillTree() {
 
   return (
     <div className="relative w-full flex justify-center items-center bg-gray-700 rounded-lg">
-      <Canvas camera={{ position: [0, 5, 10], fov: 50 }} style={{ width: "100%", height: "50vh" }}>
+      <Canvas camera={{ position: [0, 5, 10], fov: 50 }} style={{ width: "75%", height: "50vh" }}>
         <OrbitControls
           ref={controlsRef}
           enableZoom={true}

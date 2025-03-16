@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import useStore from "../store";
-import { Button } from "./ui/button";
+import Button from "./ui/button";
 
 export default function ModeSelection() {
   const { setTheme, toggleLanguage } = useStore();

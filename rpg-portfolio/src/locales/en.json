@@ -7,20 +7,154 @@
     "language": "Español",
     "chooseMode": "Choose a mode",
     "changeMode": "Change Mode",
+    "profile": {
+      "name": "🧙‍♂️ Laura - Web Developer",
+      "description": "Code adventurer with experience in React, Three.js, and more.",
+      "description_": "I'm a web developer passionate about creating digital experiences."
+    },
     "menu": {
-      "about": "📜 Sobre mí",
-      "lore": "📖 Historia",
-      "skills": "⚔️ Habilidades",
-      "resume": "📂 Currículum",
-      "projects": "🔥 Proyectos"
+      "lore": "Lore",
+      "skills": "Skills",
+      "resume": "Resume",
+      "projects": "Projects",
+      "contact": "Contact"
     },
     "hud": {
-      "title": "🎮 Portafolio RPG"
+      "title": "🎮 RPG Portfolio UI"
     },
     "sections": {
-      "projects": "🔥 Mis Proyectos",
-      "lore": "📖 Mi Historia",
-      "resume": "📂 Mi Currículum"
+      "projects": "🔥 My Projects",
+      "lore": "📖 My Journey",
+      "resume": "📂 My Resume"
+    },
+    "projects": {
+      "view_project": "View Project",
+      "no_details": "Additional details about this project."
+    },
+    "classTitle": "Wizard of the Order of Scribes",
+    "generalInfo": "General Information",
+    "class": "Class",
+    "subclass": "Subclass",
+    "race": "Race",
+    "level": "Level",
+    "background": "Background",
+    "alignment": "Alignment",
+    "wizard": "Wizard",
+    "scribeOrder": "Order of Scribes",
+    "human": "Human",
+    "juniorMid": "Junior → Mid-level in progress",
+    "codeArchitect": "Code Architect",
+    "neutralGood": "Neutral Good",
+  
+    "intelligence": "Intelligence",
+    "wisdom": "Wisdom",
+    "dexterity": "Dexterity",
+    "constitution": "Constitution",
+    "strength": "Strength",
+    "charisma": "Charisma",
+  
+    "intelligenceDesc": "Fast learner of new technologies and frameworks.",
+    "wisdomDesc": "Good judgment in technical decisions and code architecture.",
+    "dexterityDesc": "Skilled in CSS, animations, UI/UX, and responsive design.",
+    "constitutionDesc": "Ability to work under pressure and optimize code.",
+    "strengthDesc": "Doesn't lift physical servers, but carries heavy repositories. 😆",
+    "charismaDesc": "Effective communication and idea presentation.",
+  
+    "classTraits": "Class Traits",
+    "structuredCode": "📖 Structured Code Writing: Clean and well-documented code.",
+    "fastLearner": "🧠 Digital Knowledge Apprentice: Quick learner of new technologies.",
+    "repoManager": "💾 Code Archivist: Manages repositories on Git/GitHub.",
+    "multiExplorer": "🌐 Multiversal Explorer: Capable of working in frontend and backend.",
+  
+    "experience": "Experience",
+    "seleneGames": "Website maintenance and updates.",
+    "killaLibros": "Website development in React and Bootstrap.",
+    "ianuaEditora": "Website redesign in WordPress (Divi).",
+    "tragsatec": "Backend Java Developer Internship.",
+    "medicalWebsite": "Website development in WordPress (Divi).",
+    "nuoPlanet": "Frontend React Developer.",
+
+    "seleneDate": "Feb 2025 - Currently",
+    "killaDate": "Dec 2024 - Jan 2025",
+    "ianuaDate": "2024 - In Progress",
+    "tragsatecDate": "Sept 2024 - Dec 2024",
+    "medicalDate": "Mar 2024",
+    "nuoDate": "Jan 2024 - Feb 2025",
+  
+    "certifications": "Certifications & Courses",
+
+    "certDateJanApr2025": "Jan - Apr 2025",
+    "certDateAprJul2024": "Apr - Jul 2024",
+    "certDateFebMay2024": "Feb - May 2024",
+    "certDateFebJul2023": "Feb - Jul 2023",
+    "certDateOct2020Ene2024": "Oct 2020 - Jan 2024",
+  
+    "certAI900": "📜 AI-900: Microsoft Azure AI Fundamentals",
+    "certBackendJava": "📜 Backend Java with Hibernate and Spring Boot - Programa Tu Futuro",
+    "certUnity3D": "📜 IFCD28 Video Game Development and Virtual Reality with Unity 3D",
+    "certWebDev": "📜 IFCD0210 Web Development Applications",
+    "certAnimation3D": "📜 Higher Degree - 3D Animation, Games, and Interactive Environments",
+
+    "mainSkills": "Main Skills",
+    "passiveSkills": "Passive Skills",
+    
+    "frontendDev": "Frontend Development +5",
+    "frontendDevDesc": "Mastery in React, Three.js, Tailwind, and Bootstrap.",
+    
+    "backendDev": "Backend Development +3",
+    "backendDevDesc": "Experience in Java with Spring, Hibernate, and SQL.",
+    
+    "webDesign": "Web Design +4",
+    "webDesignDesc": "HTML5, CSS3, WordPress with Divi, and web accessibility.",
+    
+    "uiUx": "Design and UX/UI +5",
+    "uiUxDesc": "Use of Figma, Adobe XD for intuitive interfaces.",
+    
+    "seoOptimization": "SEO Optimization +2",
+    "seoOptimizationDesc": "Implementation of best practices in technical SEO.",
+    
+    "teamwork": "Teamwork +5",
+    "teamworkDesc": "Collaboration in group projects like Selene Games.",
+    
+    "fastLearning": "Fast Learning +6",
+    "fastLearningDesc": "Adaptability to new technologies and web development trends.",
+  
+    "downloadCV": "Download CV",
+    "downloading": "Downloading...",
+
+    "summon": {
+      "title": "📜 Summon the Mage",
+      "subtitle": "Need help with web development? Cast the summoning spell.",
+      "casting": "✨ Channeling arcane energy...",
+      "success": "✅ Summon complete! You will receive a reply soon.",
+      "name": "Your name",
+      "email": "Your email",
+      "error": "Summoning failed. Please try again.",
+      "message": "Write your message here...",
+      "button": "Summon the Mage",
+      "footer": "The magic of code is always here to help."
+    },
+    "lore": {
+      "title": "Adventurer's Story",
+      "summary": "I'm Laura, a web developer with a strong interest in 3D and programming. My journey has taken me through different creative and technical fields, from pastry to developing modern and interactive websites. I love learning and constantly seek new challenges, combining design, animation, and development to create unique digital experiences. Explore my story and see how each stage has led me to where I am today!",
+  
+      "personalityTitle": "📖 Personality",
+      "personalityContent": "I consider myself a curious, self-taught, and perfectionist individual with a great passion for technology and design. I enjoy tackling new challenges and constantly learning to improve my skills. I love combining the logic of programming with visual creativity, which allows me to approach web development and 3D modeling from a unique perspective.",
+  
+      "pastryTitle": "🍰 Pastry Experience",
+      "pastryContent": "Before stepping into the development world, I worked in pastry for several years. I completed a Dual FP program, which allowed me to train in different areas, from artisan pastry-making to working in airport catering and Japanese restaurants. The precision and aesthetic sense I gained during this time have influenced my work approach, as I value both structure and presentation in everything I do.",
+  
+      "gamesTitle": "🎮 Game Development Studies",
+      "gamesContent": "My passion for video games led me to study a Higher Degree in 3D Animation, Games, and Interactive Environments. During this program, I learned about 3D modeling, texturing, and environment design. Although I haven't worked professionally in the game industry, I continue exploring 3D with tools like Blender and Three.js, applying these skills in personal projects and collaborations.",
+  
+      "webTitle": "💻 Web Development and Training",
+      "webContent": "I discovered my interest in web development through various courses and training programs. I completed the 'Programa Tu Futuro' with Accenture, where I learned Java and Spring Boot, as well as modern application development. I also took C# courses with Azure and trained in frontend development using tools like React, Bootstrap, and TailwindCSS. Currently, I continue refining my web development skills and exploring new technologies.",
+  
+      "experiencesTitle": "🌍 Key Experiences",
+      "experiencesContent": "I've participated in various experiences that have shaped my professional profile. In 2023, I joined the 42 Madrid Piscine, where I strengthened my problem-solving and teamwork skills. I worked as a frontend developer at NÜO Planet and as a backend developer at Tragsatec, which allowed me to apply my knowledge in professional environments. Additionally, I have conducted mentorships and specialized courses in 3D and game development to help others learn about these fields.",
+  
+      "currentTitle": "🚀 Currently on a Quest",
+      "currentContent": "I am currently collaborating with Selene Games on maintaining and updating their website while continuing to develop my portfolio and seeking new opportunities in web development and 3D modeling. My goal is to continue combining my technical and creative skills to deliver innovative digital experiences."
     }
   }
   

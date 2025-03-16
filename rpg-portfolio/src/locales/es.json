@@ -7,12 +7,17 @@
     "language": "English",
     "chooseMode": "Elige un modo",
     "changeMode": "Cambiar Modo",
+    "profile": {
+      "name": "🧙‍♂️ Laura - Desarrolladora Web",
+      "description": "Aventurera del código con experiencia en React, Three.js y más.",
+      "description_": "Soy un desarrollador web apasionado por la creación de experiencias digitales."
+    },
     "menu": {
-      "about": "📜 About",
-      "lore": "📖 Lore",
-      "skills": "⚔️ Skills",
-      "resume": "📂 Resume",
-      "projects": "🔥 Projects"
+      "lore": "Historia",
+      "skills": "Habilidades",
+      "resume": "Currículum",
+      "projects": "Proyectos",
+      "contact": "Contacto"
     },
     "hud": {
       "title": "🎮 RPG Portfolio UI"
@@ -21,6 +26,135 @@
       "projects": "🔥 My Projects",
       "lore": "📖 My Journey",
       "resume": "📂 My Resume"
-    }
+    },
+    "projects": {
+      "view_project": "Ver Proyecto",
+      "no_details": "Detalles adicionales sobre este proyecto."
+    },
+    "classTitle": "Maga de la Orden de los Escribas",
+  "generalInfo": "Información General",
+  "class": "Clase",
+  "subclass": "Subclase",
+  "race": "Raza",
+  "level": "Nivel",
+  "background": "Trasfondo",
+  "alignment": "Alineamiento",
+  "wizard": "Mago",
+  "scribeOrder": "Orden de los Escribas",
+  "human": "Humana",
+  "juniorMid": "Junior → Mid-level en progreso",
+  "codeArchitect": "Arquitecta del Código",
+  "neutralGood": "Neutral Bueno",
+
+  "intelligence": "Inteligencia",
+  "wisdom": "Sabiduría",
+  "dexterity": "Destreza",
+  "constitution": "Constitución",
+  "strength": "Fuerza",
+  "charisma": "Carisma",
+
+  "intelligenceDesc": "Aprendizaje rápido de nuevas tecnologías y frameworks.",
+  "wisdomDesc": "Buen juicio en la toma de decisiones técnicas y arquitectura de código.",
+  "dexterityDesc": "Habilidad en CSS, animaciones, UI/UX y diseño responsivo.",
+  "constitutionDesc": "Capacidad para trabajar bajo presión y optimizar código.",
+  "strengthDesc": "No levanta servidores físicos, pero sí carga con repositorios pesados. 😆",
+  "charismaDesc": "Comunicación en equipo y presentación de ideas.",
+
+  "classTraits": "Rasgos de Clase",
+  "structuredCode": "📖 Escritura de Código Estructurado: Código limpio y bien documentado.",
+  "fastLearner": "🧠 Aprendiz del Conocimiento Digital: Aprendizaje rápido de nuevas tecnologías.",
+  "repoManager": "💾 Archivista del Código: Gestión de repositorios en Git/GitHub.",
+  "multiExplorer": "🌐 Exploradora Multiversal: Capacidad de trabajar en frontend y backend.",
+
+  "experience": "Experiencia",
+  "seleneGames": "Mantenimiento y actualización de la web.",
+  "killaLibros": "Desarrollo de sitio web en React y Bootstrap.",
+  "ianuaEditora": "Rediseño de WordPress (Divi).",
+  "tragsatec": "Prácticas Desarrolladora Backend Java.",
+  "medicalWebsite": "Desarrollo en WordPress (Divi).",
+  "nuoPlanet": "Desarrolladora Frontend React.",
+
+  "seleneDate": "Feb 2025 - Presente",
+  "killaDate": "Dec 2024 - Jan 2025",
+  "ianuaDate": "2024 - En Progreso",
+  "tragsaDate": "Sept 2024 - Dec 2024",
+  "medicalDate": "Mar 2024",
+  "nuoDate": "En 2024 - Feb 2024",
+
+  "certifications": "Certificaciones y Cursos",
+  
+  "certDateJanApr2025": "Ene - Apr 2025",
+  "certDateAprJul2024": "Abr - Jul 2024",
+  "certDateFebMay2024": "Feb - May 2024",
+  "certDateFebJul2023": "Feb - Jul 2023",
+  "certDateOct2020Ene2024": "Oct 2020 - Ene 2024",
+
+  "certAI900": "📜 AI-900: Microsoft Azure AI Fundamentals",
+  "certBackendJava": "📜 Backend Java con Hibernate y Spring Boot - Programa Tu Futuro",
+  "certUnity3D": "📜 IFCD28 Desarrollo de Videojuegos y Realidad Virtual con Unity 3D",
+  "certWebDev": "📜 IFCD0210 Desarrollo de aplicaciones con tecnologías web",
+  "certAnimation3D": "📜 FP Superior - Animación 3D, Juegos y Entornos Interactivos",
+
+  "mainSkills": "Habilidades Principales",
+  "passiveSkills": "Habilidades Pasivas",
+  
+  "frontendDev": "Programación Frontend +5",
+  "frontendDevDesc": "Maestría en React, Three.js, Tailwind y Bootstrap.",
+  
+  "backendDev": "Desarrollo Backend +3",
+  "backendDevDesc": "Experiencia en Java con Spring, Hibernate y SQL.",
+  
+  "webDesign": "Maquetación Web +4",
+  "webDesignDesc": "HTML5, CSS3, WordPress con Divi y accesibilidad web.",
+  
+  "uiUx": "Diseño y UX/UI 5",
+  "uiUxDesc": "Uso de Figma, Adobe XD para interfaces intuitivas.",
+  
+  "seoOptimization": "Optimización y SEO +2",
+  "seoOptimizationDesc": "Implementación de buenas prácticas en SEO técnico.",
+  
+  "teamwork": "Trabajo en equipo +5",
+  "teamworkDesc": "Colaboración en proyectos grupales como Selene Games.",
+  
+  "fastLearning": "Aprendizaje Rápido +6",
+  "fastLearningDesc": "Adaptabilidad a nuevas tecnologías y tendencias del desarrollo web.",
+
+  "downloadCV": "Descargar CV",
+  "downloading": "Descargando...",
+
+  "summon": {
+    "title": "📜 Invocación de la Maga",
+    "subtitle": "¿Necesitas ayuda en desarrollo web? Lanza el hechizo de invocación.",
+    "casting": "✨ Canalizando energía arcana...",
+    "success": "✅ ¡Invocación completada! Pronto recibirás una respuesta.",
+    "name": "Tu nombre",
+    "email": "Tu correo electrónico",
+    "error": "Invocación fallida. Inténtalo de nuevo.",
+    "message": "Escribe tu mensaje aquí...",
+    "button": "Invocar a la Maga",
+    "footer": "La magia del código siempre está disponible para ayudar."    
+  },
+  "lore": {
+    "title": "Historia de la Aventurera",
+    "summary": "Soy Laura, una desarrolladora web con un gran interés en el 3D y la programación. Mi camino ha sido una travesía entre el arte y la tecnología, desde la pastelería hasta la creación de sitios web modernos e interactivos.\\nMe encanta aprender y siempre estoy en busca de nuevos retos, combinando diseño, animación y desarrollo para crear experiencias digitales únicas. ¡Explora mi historia y descubre cómo cada etapa me ha llevado a donde estoy hoy!",
+
+    "personalityTitle": "📖 Personalidad",
+    "personalityContent": "Me considero una persona curiosa, autodidacta y perfeccionista, con una gran pasión por la tecnología y el diseño. Disfruto enfrentar nuevos desafíos y aprender constantemente para mejorar mis habilidades. Me encanta combinar la lógica de la programación con la creatividad visual, lo que me permite abordar el desarrollo web y el modelado 3D desde una perspectiva única.",
+
+    "pastryTitle": "🍰 Experiencia en Pastelería",
+    "pastryContent": "Antes de entrar en el mundo del desarrollo, trabajé durante varios años en pastelería. Realicé una FP Dual, lo que me permitió formarme en distintas áreas, desde la elaboración artesanal de postres hasta el trabajo en catering de aeropuertos y restaurantes japoneses. La precisión y el sentido estético que adquirí en esta etapa han influido en mi enfoque de trabajo, ya que valoro tanto la estructura como la presentación en todo lo que hago.",
+
+    "gamesTitle": "🎮 Formación en Videojuegos",
+    "gamesContent": "Mi pasión por los videojuegos me llevó a estudiar un FP Superior en Animación 3D, Juegos y Entornos Interactivos. Durante esta formación, adquirí conocimientos en modelado 3D, texturizado y diseño de entornos. Aunque no he trabajado profesionalmente en la industria del videojuego, sigo explorando el 3D con herramientas como Blender y Three.js, y aplicando estas habilidades en proyectos personales y colaboraciones.",
+
+    "webTitle": "💻 Desarrollo Web y Formación",
+    "webContent": "Descubrí mi interés por el desarrollo web a través de distintos cursos y formaciones. Completé el programa 'Programa Tu Futuro' con Accenture, donde aprendí Java y Spring Boot, así como el desarrollo de aplicaciones con tecnologías modernas. También realicé cursos de C# con Azure y me capacité en frontend con herramientas como React, Bootstrap y TailwindCSS. Actualmente, continúo perfeccionando mis conocimientos en tecnologías web y explorando nuevas herramientas.",
+
+    "experiencesTitle": "🌍 Experiencias Claves",
+    "experiencesContent": "He participado en distintas experiencias que han moldeado mi perfil profesional. En 2023, me uní a la piscina de 42 Madrid, donde reforcé mis habilidades en resolución de problemas y trabajo en equipo. Trabajé como desarrolladora frontend en NÜO Planet y como backend en Tragsatec, lo que me permitió aplicar mis conocimientos en entornos profesionales. Además, he realizado mentorías y cursos especializados en 3D y desarrollo de videojuegos para ayudar a otros a aprender sobre estas áreas.",
+
+    "currentTitle": "🚀 Actualmente en Aventura",
+    "currentContent": "Actualmente, colaboro con Selene Games en el mantenimiento y actualización de su sitio web, mientras sigo desarrollando mi portafolio y buscando nuevas oportunidades en el desarrollo web y el modelado 3D. Mi meta es seguir combinando mis conocimientos técnicos y creativos para ofrecer experiencias digitales innovadoras."
   }
+}
   
