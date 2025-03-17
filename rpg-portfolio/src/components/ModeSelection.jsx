@@ -17,7 +17,7 @@ export default function ModeSelection() {
           {t("rpgMode")}
         </Button>
       </div>
-      <Button onClick={toggleLanguage} className="mt-6 px-4 py-4 rounded-lg" style={{marginY: "10px"}}>
+      <Button onClick={toggleLanguage} className="btn-main mt-6 px-4 py-4 rounded-lg" style={{marginY: "10px"}}>
         {t("language")}
       </Button>
     </div>

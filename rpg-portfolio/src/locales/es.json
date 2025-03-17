@@ -155,6 +155,11 @@
 
     "currentTitle": "🚀 Actualmente en Aventura",
     "currentContent": "Actualmente, colaboro con Selene Games en el mantenimiento y actualización de su sitio web, mientras sigo desarrollando mi portafolio y buscando nuevas oportunidades en el desarrollo web y el modelado 3D. Mi meta es seguir combinando mis conocimientos técnicos y creativos para ofrecer experiencias digitales innovadoras."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy Laura Frías, desarrolladora web con experiencia en frontend y backend. Me especializo en crear experiencias digitales interactivas y atractivas. Disfruto combinando código y diseño para desarrollar interfaces intuitivas y optimizadas.",
+    "techTitle": "Tecnologías con las que trabajo"
   }
 }
   

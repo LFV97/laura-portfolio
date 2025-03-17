@@ -20,6 +20,12 @@
   border: 2px solid transparent;
 }
 
+.btn-main {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+}
+
 .btn:hover {
   background-color: #575757;
   border: white 2px solid;

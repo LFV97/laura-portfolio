@@ -155,6 +155,11 @@
   
       "currentTitle": "🚀 Currently on a Quest",
       "currentContent": "I am currently collaborating with Selene Games on maintaining and updating their website while continuing to develop my portfolio and seeking new opportunities in web development and 3D modeling. My goal is to continue combining my technical and creative skills to deliver innovative digital experiences."
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I'm Laura Frías, a web developer with experience in frontend and backend. I specialize in creating interactive and engaging digital experiences. I enjoy combining code and design to develop intuitive and optimized interfaces.",
+      "techTitle": "Technologies I Work With"
     }
   }
   

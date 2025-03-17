@@ -1,5 +1,6 @@
 
 import useStore from "../store";
+import ClassicContainer from "./classic/ClassicContainer";
 import RpgContainer from "./rpg/RpgContainer";
 import i18n from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
@@ -13,9 +14,8 @@ export default function PortfolioContent() {
         {theme === "rpg" ? (
           <RpgContainer />
         ) : (
-          <div className="p-8 text-center">
-            <h1 className="text-4xl font-bold">{t("classicMode")}</h1>
-            <p className="mt-4">{t("welcomeClassic")}</p>
+          <div className="py-8 w-full text-center">
+            <ClassicContainer />
           </div>
         )}
       </div>
