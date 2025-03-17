@@ -5,18 +5,15 @@ export default function ThemeToggle({ darkMode, setDarkMode }) {
         <button
             onClick={() => {
                 setDarkMode(!darkMode);
-                localStorage.setItem("darkMode", !darkMode); // Guardar en localStorage
+                localStorage.setItem("darkMode", !darkMode);
             }}
-            className={`flex items-center px-4 py-2 border rounded-lg shadow-md transition-all duration-300 ${
-                darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
-            }`}
+            className="toggle-theme flex items-center px-4 py-2 border rounded-lg shadow-md transition-all duration-300"
         >
             {darkMode ? <FaSun className="text-yellow-500" /> : <FaMoon className="text-gray-800" />}
             <span className="ml-2">{darkMode ? "Modo Claro" : "Modo Oscuro"}</span>
         </button>
     );
 }
-
 
 
 // import { useState, useEffect } from "react";

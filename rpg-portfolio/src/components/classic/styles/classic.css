@@ -1,7 +1,7 @@
 /* 🎨 Variables de Tema */
 :root {
     --bg-color: #F4F4F4;
-    --text-color: #333;
+    --text-color: #222;
     --title-color: #d36f11;
     --card-bg: white;
     --card-shadow: rgba(0, 0, 0, 0.1);
@@ -23,7 +23,7 @@
 /* 🌞 Modo Claro */
 .light-mode {
     --bg-color: #ffffff;
-    --text-color: #333;
+    --text-color: #222;
 }
 
 /* 📦 Secciones */

@@ -1,8 +1,19 @@
 import { useTranslation } from "react-i18next";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import profilePhoto from "../../../assets/img/profile.jpeg"; // Asegúrate de cambiar esto por tu imagen real
 
 export default function AboutMe() {
   const { t } = useTranslation();
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+      gsap.fromTo(
+          sectionRef.current,
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      );
+  }, []);
 
   return (
     <section className="container mx-auto justify-center px-6 py-12 flex flex-col md:flex-row items-center gap-8">

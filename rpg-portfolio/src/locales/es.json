@@ -17,7 +17,8 @@
       "skills": "Habilidades",
       "resume": "Currículum",
       "projects": "Proyectos",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "changeMode": "Cambiar Modo"
     },
     "hud": {
       "title": "🎮 RPG Portfolio UI"
@@ -160,6 +161,22 @@
     "title": "Sobre mí",
     "description": "Soy Laura Frías, desarrolladora web con experiencia en frontend y backend. Me especializo en crear experiencias digitales interactivas y atractivas. Disfruto combinando código y diseño para desarrollar interfaces intuitivas y optimizadas.",
     "techTitle": "Tecnologías con las que trabajo"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "main": {
+      "title": "Habilidades Principales",
+      "frontend": "Frontend Avanzado: Maestría en React, Three.js, Tailwind y Bootstrap.",
+      "backend": "Backend & API: Experiencia con Java (Spring Boot, Hibernate) y PHP (Laravel).",
+      "web_design": "Maquetación Web: HTML5, CSS3, WordPress con Divi y accesibilidad web.",
+      "ux_ui": "UX/UI Design: Uso de Figma y Adobe XD para diseñar interfaces atractivas."
+    },
+    "passive": {
+      "title": "Habilidades Pasivas",
+      "teamwork": "Trabajo en equipo: Experiencia colaborando en proyectos grupales.",
+      "fast_learning": "Aprendizaje Rápido: Capacidad para adaptarme a nuevas tecnologías.",
+      "problem_solving": "Resolución de problemas: Habilidad para encontrar soluciones creativas a errores y optimización de código."
+    }
   }
 }
   
