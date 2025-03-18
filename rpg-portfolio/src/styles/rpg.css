@@ -1,25 +1,37 @@
-/* .rpg-container {
+.rpg-container {
     border: 15px solid transparent;
-    border-image-source: url('../../public/img/border_04.jpeg');
-    background-image: url('../../public/img/border_04.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: stretch;
+    border-image-source: url('../../public/img/border_01.png');
+    /* background-image: url('../../public/img/border_04.jpeg'); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: stretch; */
     border-image-slice: 30;
-    border-image-repeat: stretch;
+    border-image-repeat: repeat;
     background-color: #f3e0c0;
     padding: 20px;
     border-radius: 15px; 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  } */
+  }
+
+@media screen and (min-width: 1023px) and (max-width: 1441px) {
+    .rpg-container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    .rpg-container {
+        width: 50%;
+    }
+}
   
 
-.rpg-container {
+/* .rpg-container {
   border: 10px solid;
   border-image-source: linear-gradient(to right, #8b4513, #a0522d);
   border-image-slice: 1;
   background-color: #f3e0c0;
   padding: 20px;
   border-radius: 15px;
-}
+} */
   

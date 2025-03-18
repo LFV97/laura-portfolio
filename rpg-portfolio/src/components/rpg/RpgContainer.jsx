@@ -15,11 +15,11 @@ export default function RpgContainer() {
     const [section, setSection] = useState("lore");
 
   return (
-    <div className="rpg-container w-[50%] min-h-screen flex flex-col">
+    <div className="rpg-container lg:w-[60%] md:w-[90%] sm:w-[100%] min-h-screen flex flex-col">
       <RpgHud />
       <div className="flex flex-grow">
         <RpgMenu setSection={setSection} />
-        <div className="flex-grow p-6">
+        <div className="flex-grow">
         <RpgProfile />
           {section === "skills" && <RpgSkills />}
           {section === "projects" && <Projects />}

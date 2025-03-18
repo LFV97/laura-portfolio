@@ -27,14 +27,14 @@ export default function RpgMenu({ currentSection, setSection }) {
     <div className="relative">
       {/* 📱 Botón de menú en móviles */}
       <button 
-        className="lg:hidden bg-gray-800 text-white p-2 rounded-md fixed top-4 left-4 z-50"
+        className="lg:hidden bg-gray-800 text-white p-2 rounded-md fixed top-4 left-4 md:left-20 sm:left-10 sm:top-12 z-50"
         onClick={() => setIsOpen(!isOpen)}
       >
         <FaBars size={24} />
       </button>
 
       {/* 🖥️ Menú Principal */}
-      <div className={`lg:block ${isOpen ? "block" : "hidden"} absolute lg:relative top-12 left-0 lg:top-0 lg:left-0 h-full w-48 bg-gray-900 p-4 space-y-4 rounded-lg shadow-md flex flex-col justify-between`}>
+      <div className={`lg:block ${isOpen ? "block" : "hidden"} absolute lg:relative top-12 left-0 lg:top-0 lg:left-0 h-full md:w-48 bg-gray-900 p-4 space-y-4 rounded-lg shadow-md flex flex-col justify-between z-50 sm:w-[90vw] sm:top-0`}>
         
         {/* Secciones del Menú */}
         <div>

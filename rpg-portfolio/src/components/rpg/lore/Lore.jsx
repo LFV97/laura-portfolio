@@ -38,9 +38,10 @@ export default function Lore() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto bg-gray-800 text-white p-8 rounded-lg shadow-lg border-2 border-yellow-500 relative">
+    <div className="w-full max-w-l mx-auto bg-gray-800 text-white p-8 rounded-lg shadow-lg border-2 border-yellow-500 relative">
+    {/* // <div className="relative flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-52 xl:h-52"> */}
       {/* 📖 Título */}
-      <h1 className="text-3xl font-bold text-yellow-400 flex items-center gap-2">
+      <h1 className="text-3xl font-bold justify-center text-yellow-400 flex items-center gap-2">
         <FaBook /> {t("lore.title")}
       </h1>
 

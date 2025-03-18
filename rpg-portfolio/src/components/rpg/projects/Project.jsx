@@ -11,7 +11,7 @@ export default function Projects() {
     };
   
     return (
-        <div className="projects-container p-6 bg-gray-700 text-white rounded-lg w-full max-w-5xl mx-auto">
+        <div className="projects-container p-6 bg-gray-700 text-white rounded-lg w-full w-full max-w-l mx-auto">
         {projectsData.map((project) => (
           <ProjectSlot 
             key={project.id} 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaMagic, FaPaperPlane } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 
 export default function SummonContact() {
@@ -42,7 +43,7 @@ export default function SummonContact() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto bg-gray-800 text-white p-8 rounded-lg shadow-lg border-2 border-purple-500 relative text-center">
+    <div className="w-full max-w-l mx-auto bg-gray-800 text-white p-8 rounded-lg shadow-lg border-2 border-purple-500 relative text-center">
       <h2 className="text-3xl font-bold text-purple-400">{t("summon.title")}</h2>
       <p className="text-gray-300 italic">{t("summon.subtitle")}</p>
 
@@ -94,6 +95,12 @@ export default function SummonContact() {
         </form>
       )}
 
+      <div className="mt-3 justify-center gap-4">
+        <div className="mt-6 text-gray-400 text-md">{t("summon.whereToFind")}</div>
+        <a className="flex p-3 justify-center" href="https://www.linkedin.com/in/laura-frias-viana/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin size={40} />
+        </a>
+      </div>
       <p className="mt-6 text-gray-400 text-sm">{t("summon.footer")}</p>
     </div>
   );

@@ -16,7 +16,7 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <section className="container mx-auto justify-center px-6 py-12 flex flex-col md:flex-row items-center gap-8">
+    <section className="container w-5xl mx-auto justify-center px-6 py-12 flex flex-col md:flex-row items-center gap-8">
       {/* Imagen de perfil */}
       <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-primary shadow-lg">
         <img
@@ -31,7 +31,7 @@ export default function AboutMe() {
         <h1 className="text-3xl md:text-4xl font-bold text-primary">
           {t("about.title")}
         </h1>
-        <p className="text-lg text-gray-700 dark:text-gray-300 mt-4">
+        <p className="text-lg text-gray-700mt-4">
           {t("about.description")}
         </p>
 

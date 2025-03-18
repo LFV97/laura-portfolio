@@ -124,7 +124,7 @@
     "downloading": "Downloading...",
 
     "summon": {
-      "title": "📜 Summon the Mage",
+      "title": "📜 Summon Me!",
       "subtitle": "Need help with web development? Cast the summoning spell.",
       "casting": "✨ Channeling arcane energy...",
       "success": "✅ Summon complete! You will receive a reply soon.",
@@ -133,6 +133,7 @@
       "error": "Summoning failed. Please try again.",
       "message": "Write your message here...",
       "button": "Summon the Mage",
+      "whereToFind": "You can also find me on these magic areas:",
       "footer": "The magic of code is always here to help."
     },
     "lore": {
@@ -176,6 +177,67 @@
         "teamwork": "Teamwork: Experience collaborating on group projects.",
         "fast_learning": "Fast Learning: Ability to adapt to new technologies.",
         "problem_solving": "Problem-Solving: Skill in finding creative solutions to errors and code optimization."
+      }
+    },
+    "resume": {
+      "title": "Experience",
+      "selene": {
+        "position": "Web Developer",
+        "description": "Maintenance and update of the website for Selene Games, an indie game studio."
+      },
+      "tragsatec": {
+        "position": "Backend Developer (Internship)",
+        "description": "Contributed to modernizing web pages using Struts2, Hibernate, and Bootstrap."
+      },
+      "nuoplanet": {
+        "position": "Frontend Developer",
+        "description": "Fixed styles and improved UI in React and TypeScript for a web application."
+      },
+      "mentorship": {
+        "company": "Various Courses & Mentorships",
+        "position": "Student / Mentee",
+        "description": "Participated in specialized courses and mentorships in web development and 3D modeling with Three.js."
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Have a project in mind? Let's talk!",
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Write your message here...",
+      "send": "Send Message",
+      "successMessage": "Message sent successfully!"
+    },
+    "project": {
+      "title": "Projects",
+      "viewProject": "View Project",
+      "selene": {
+        "title": "Selene Games",
+        "date":"Feb 2025 - Currently",
+        "description": "Maintenance and update of the website for Selene Games, an indie game studio."
+      },
+      "killa": {
+        "title": "KillaLibros Publishing",
+        "date": "Dec 2024 - Jan 2025",
+        "description": "Website design and development for KillaLibros, featuring advanced book search functionalities."
+      },
+      "ianua": {
+        "title": "Ianua Editora",
+        "date": "May 2024 - Remodelation",
+        "description": "Website under redesign with new interactive sections and UI improvements for authors."
+      },
+      "medical": {
+        "title": "Medical Website",
+        "date": "Mar 2024",
+        "description": "Professional website for Dr. Rosa Viana, focused on accessibility and easy navigation for patients."
+      },
+      "coffeeshop": {
+        "title": "Coffee Shop Landing Page",
+        "description": "A modern and visually appealing UI design for a coffee shop landing page, created in Figma with a focus on branding and user engagement."
+      },
+      "everyday": {
+        "title": "Everyday Cakes App – UI",
+        "description": "Concepto de diseño UI para una aplicación de pastelería, creada en Figma y Adobe XD, con un enfoque en la navegación intuitiva y una estética atractiva."
       }
     }
   }

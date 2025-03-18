@@ -6,8 +6,8 @@ const projectsData = [
       es: "Selene Games"
     },
     date: {
-      en: "Feb 2025",
-      es: "Feb 2025"
+      en: "Feb 2025 - Currently",
+      es: "Feb 2025 - Actualmente"
     },
     technologies: ["Vue", "TailwindCSS", "PHP", "Laravel"],
     status: {
@@ -32,8 +32,8 @@ const projectsData = [
       es: "Editorial KillaLibros"
     },
     date: {
-      en: "Feb 2025",
-      es: "Feb 2025"
+      en: "Dec 2024 - Jan 2025",
+      es: "Dic 2024 - Ene 2025"
     },
     technologies: ["React", "Bootstrap", "PHP"],
     status: {

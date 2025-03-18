@@ -3,7 +3,7 @@
     --bg-color: #F4F4F4;
     --text-color: #222;
     --title-color: #d36f11;
-    --card-bg: white;
+    --card-bg: #f7f7f7;
     --card-shadow: rgba(0, 0, 0, 0.1);
     --button-bg: #FF9800;
     --button-hover: #E68A00;
@@ -15,6 +15,7 @@
     --text-color: #f4f4f4;
     --title-color: #d36f11;
     --card-bg: #222;
+    --subcard-bg: #1e2939;
     --card-shadow: rgba(255, 255, 255, 0.1);
     --button-bg: #d36f11;
     --button-hover: #b85e0c;
@@ -22,7 +23,9 @@
 
 /* 🌞 Modo Claro */
 .light-mode {
-    --bg-color: #ffffff;
+    --bg-color: #f3f3f3;
+    --bg: #e2e2e2;
+    --subcard-bg: #ffffff;
     --text-color: #222;
 }
 
@@ -33,6 +36,20 @@
     color: var(--text-color);
     transition: all 0.3s ease-in-out;
     min-height: 100vh;
+    min-width: 100vw;
+}
+
+.classic-section {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px var(--card-shadow);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.subcard {
+    background-color: var(--subcard-bg);
 }
 
 /* Estilos adicionales para los botones */

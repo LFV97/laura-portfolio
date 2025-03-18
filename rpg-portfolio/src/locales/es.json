@@ -124,7 +124,7 @@
   "downloading": "Descargando...",
 
   "summon": {
-    "title": "📜 Invocación de la Maga",
+    "title": "📜 ¡Invócame!",
     "subtitle": "¿Necesitas ayuda en desarrollo web? Lanza el hechizo de invocación.",
     "casting": "✨ Canalizando energía arcana...",
     "success": "✅ ¡Invocación completada! Pronto recibirás una respuesta.",
@@ -133,6 +133,7 @@
     "error": "Invocación fallida. Inténtalo de nuevo.",
     "message": "Escribe tu mensaje aquí...",
     "button": "Invocar a la Maga",
+    "whereToFind": "También puedes encontrarme en estas áreas mágicas:",
     "footer": "La magia del código siempre está disponible para ayudar."    
   },
   "lore": {
@@ -176,6 +177,67 @@
       "teamwork": "Trabajo en equipo: Experiencia colaborando en proyectos grupales.",
       "fast_learning": "Aprendizaje Rápido: Capacidad para adaptarme a nuevas tecnologías.",
       "problem_solving": "Resolución de problemas: Habilidad para encontrar soluciones creativas a errores y optimización de código."
+    }
+  },
+  "resume": {
+    "title": "Experiencia",
+    "selene": {
+      "position": "Desarrolladora Web",
+      "description": "Mantenimiento y actualización del sitio web de Selene Games, un estudio indie de videojuegos."
+    },
+    "tragsatec": {
+      "position": "Desarrolladora Backend (Prácticas)",
+      "description": "Contribución en la modernización de páginas web con Struts2, Hibernate y Bootstrap."
+    },
+    "nuoplanet": {
+      "position": "Desarrolladora Frontend",
+      "description": "Corrección de estilos y mejoras en React y TypeScript para una aplicación web."
+    },
+    "mentorship": {
+      "company": "Varios Cursos y Mentorías",
+      "position": "Estudiante / Mentorizada",
+      "description": "Cursos y mentorías especializadas en desarrollo web y modelado 3D con Three.js."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Tienes un proyecto en mente? ¡Hablemos!",
+    "name": "Tu nombre",
+    "email": "Tu correo",
+    "message": "Escribe tu mensaje aquí...",
+    "send": "Enviar Mensaje",
+    "successMessage": "¡Mensaje enviado correctamente!"
+  },
+  "project": {
+    "title": "Proyectos",
+    "viewProject": "Ver Proyecto",
+    "selene": {
+      "title": "Selene Games",
+      "date":"Febrero 2025 - Presente",
+      "description": "Mantenimiento y actualización del sitio web para Selene Games, un estudio indie de videojuegos."
+    },
+    "killa": {
+      "title": "Editorial KillaLibros",
+      "date": "Dic 2024 - Ene 2025",
+      "description": "Diseño y desarrollo del sitio web para la editorial KillaLibros, con funcionalidades avanzadas de búsqueda de libros."
+    },
+    "ianua": {
+      "title": "Ianua Editora",
+      "date": "Mayo 2024 - Remodelación",
+      "description": "Sitio web en proceso de rediseño con nuevas secciones interactivas y mejoras para los autores."
+    },
+    "medical": {
+      "title": "Sitio Médico",
+      "date": "Marzo 2024",
+      "description": "Web profesional para la doctora Rosa Viana, enfocada en accesibilidad y facilidad de navegación para pacientes."
+    },
+    "coffeeshop": {
+      "title": "Página de Cafetería",
+      "description": "Diseño UI moderno y visualmente atractivo para una página de aterrizaje de cafetería, creado en Figma con un enfoque en la identidad de marca y la interacción del usuario."
+    },
+    "everyday": {
+      "title": "App Everyday Cakes – UI",
+      "description": "Proyecto de interfaz de usuario para una app de pastelería."
     }
   }
 }

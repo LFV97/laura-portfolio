@@ -21,7 +21,7 @@ export default function RPGCharacterSheet() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto bg-gray-800 text-white p-8 rounded-lg shadow-lg border-2 border-yellow-500 relative">
+    <div className="w-full max-w-l mx-auto bg-gray-800 text-white p-8 rounded-lg shadow-lg border-2 border-yellow-500 relative">
       {/* 📜 Nombre y título */}
       <h1 className="text-4xl font-bold text-yellow-400 text-center">
         Laura Frías Viana
