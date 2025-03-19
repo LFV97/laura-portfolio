@@ -21,7 +21,7 @@
       "changeMode": "Cambiar Modo"
     },
     "hud": {
-      "title": "🎮 RPG Portfolio UI"
+      "title": "🎮 LFV RPG Style"
     },
     "sections": {
       "projects": "🔥 My Projects",
@@ -130,7 +130,7 @@
     "success": "✅ ¡Invocación completada! Pronto recibirás una respuesta.",
     "name": "Tu nombre",
     "email": "Tu correo electrónico",
-    "error": "Invocación fallida. Inténtalo de nuevo.",
+    "error": "Invocación fallida. Maná insuficiente.",
     "message": "Escribe tu mensaje aquí...",
     "button": "Invocar a la Maga",
     "whereToFind": "También puedes encontrarme en estas áreas mágicas:",

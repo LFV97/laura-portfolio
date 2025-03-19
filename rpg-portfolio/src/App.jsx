@@ -21,7 +21,8 @@ export default function App() {
 
   // Si no ha elegido un tema, mostrar la selección de modo
   if (!theme) {
-    return <ModeSelection />;
+    // return <ModeSelection />;
+    return <PortfolioContent />;
   }
 
   // Mostrar el contenido del portfolio según el tema elegido

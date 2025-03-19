@@ -21,7 +21,7 @@
       "changeMode": "Change Mode"
     },
     "hud": {
-      "title": "🎮 RPG Portfolio UI"
+      "title": "🎮 LFV RPG Style"
     },
     "sections": {
       "projects": "🔥 My Projects",
@@ -130,7 +130,7 @@
       "success": "✅ Summon complete! You will receive a reply soon.",
       "name": "Your name",
       "email": "Your email",
-      "error": "Summoning failed. Please try again.",
+      "error": "Summoning failed. Insufficient mana.",
       "message": "Write your message here...",
       "button": "Summon the Mage",
       "whereToFind": "You can also find me on these magic areas:",

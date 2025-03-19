@@ -10,14 +10,16 @@ export default function PortfolioContent() {
   const { t } = useTranslation();
    
     return (
-      <div className={`min-w-screen min-h-screen flex items-center justify-center ${theme === "rpg" ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
-        {theme === "rpg" ? (
+      <div className={`min-w-screen min-h-screen flex items-center justify-center ${theme === "rpg" ? "bg-gray-950 text-white" : "bg-white text-black"}`}>
+      {/* <div className={`min-w-screen min-h-screen flex items-center justify-center bg-gray-950 text-white`}> */}
+        <ClassicContainer />
+        {/* {theme === "rpg" ? (
           <RpgContainer />
         ) : (
           <div className="py-8 w-full text-center">
             <ClassicContainer />
           </div>
-        )}
+        )} */}
       </div>
     );
   }
