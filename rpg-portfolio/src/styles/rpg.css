@@ -24,7 +24,72 @@
         width: 50%;
     }
 }
-  
+
+/* 🌐 Menú: Desde 1441px en adelante es visible siempre */
+/* @media (min-width: 1441px) {
+    .menu-1441 {
+        transform: translateX(0) !important;
+        display: block !important;
+    }
+    .hidden-1440 {
+        display: none !important;
+    }
+} */
+
+/* 📱 Menú hamburguesa: Desde 1440px para abajo debe ocultarse */
+
+
+
+
+
+/* 🌐 Mostrar el menú completo en pantallas grandes (1441px en adelante) */
+/* 🌐 Menú fijo desde 1441px en adelante */
+@media (min-width: 1441px) {
+    .rpg-menu {
+        display: flex !important;  /* Hace que el menú siempre sea visible */
+        transform: translateX(0) !important;  /* Asegura que el menú esté en su lugar */
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 250px;  /* Ajusta según tu diseño */
+        height: 100vh;
+        background: #111827;  /* Color de fondo */
+        padding: 20px;
+        z-index: 50;
+    }
+    .menu-button {
+        display: none !important;  /* Oculta el botón hamburguesa en pantallas grandes */
+    }
+    .hidden-1440 {
+        display: none !important;
+    }
+}
+
+/* 📱 Menú hamburguesa para 1440px y menos */
+@media (max-width: 1440px) {
+    .rpg-menu {
+        transform: translateX(-100%);
+        display: none !important; /* Se oculta por defecto */
+    }
+    .menu-open {
+        display: block !important;
+        transform: translateX(0);
+    }
+    .menu-button {
+        display: block !important; /* Se muestra el botón de hamburguesa */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 60;
+        background: #fbbf24;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+
 
 .rpg-container {
   border: 10px solid;
@@ -34,4 +99,3 @@
   padding: 20px;
   border-radius: 15px;
 }
-  

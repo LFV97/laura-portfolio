@@ -43,13 +43,6 @@ export default function ClassicExperience({ darkMode }) {
             icon: <FaBriefcase />,
         },
         {
-            date: t("nuoDate"),
-            position: t("resume.nuoplanet.position"),
-            company: "NÜO Planet",
-            description: t("resume.nuoplanet.description"),
-            icon: <FaBriefcase />,
-        },
-        {
             date: t("certDateJanApr2025"),
             position: t("resume.certifications.ai900.position"),
             company: "Microsoft",
@@ -62,6 +55,13 @@ export default function ClassicExperience({ darkMode }) {
             company: "Accenture",
             description: t("resume.certifications.backendJava.description"),
             icon: <FaGraduationCap />,
+        },
+        {
+            date: t("nuoDate"),
+            position: t("resume.nuoplanet.position"),
+            company: "NÜO Planet",
+            description: t("resume.nuoplanet.description"),
+            icon: <FaBriefcase />,
         },
         {
             date: t("certDateFebMay2024"),

@@ -85,12 +85,12 @@ export default function ClassicMenu({ setSection, darkMode, setDarkMode }) {
                     </li>
                 ))}
                 <li>
-                    <button onClick={() => setTheme("")} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
+                    <button onClick={() => setTheme("")} className="btn-classic px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
                         {t("menuC.changeMode")}
                     </button>
                 </li>
                 <li>
-                    <button onClick={toggleLanguage} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
+                    <button onClick={toggleLanguage} className="btn-classic px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
                         {t("menuC.language")}
                     </button>
                 </li>
@@ -122,10 +122,10 @@ export default function ClassicMenu({ setSection, darkMode, setDarkMode }) {
                         </li>
                     ))}
                     <li>
-                        <button onClick={() => setTheme("")} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
+                        <button onClick={() => setTheme("")} className="btn-classic px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
                             {t("menuC.changeMode")}
                         </button>
-                        <button onClick={toggleLanguage} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
+                        <button onClick={toggleLanguage} className="btn-classic px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
                             {t("menuC.language")}
                         </button>
                     </li>

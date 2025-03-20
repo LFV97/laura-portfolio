@@ -6,7 +6,7 @@ export default function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="hero container w-5xl mx-auto flex flex-col md:flex-row items-center justify-center px-6 py-12 gap-8">
+    <section className="hero container max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center px-6 py-12 gap-8">
       {/* Imagen de perfil */}
       <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-primary shadow-lg">
         <img src={profilePhoto} alt="Laura Frías" className="w-full h-full object-cover" />

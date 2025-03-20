@@ -7,11 +7,15 @@
     "language": "Español",
     "chooseMode": "Choose a mode",
     "changeMode": "Change Mode",
+    "classicModeDesc": "A modern and professional design with a smooth and stylish experience.",
+    "rpgModeDesc": "Immerse yourself in a game-inspired interface with interactive elements.",
     "profile": {
       "name": "🧙‍♂️ Laura - Web Developer",
       "description": "Code adventurer with experience in React, Three.js, and more.",
       "description_": "I'm a web developer passionate about creating digital experiences."
     },
+    "light-mode": "Light mode",
+    "dark-mode": "Dark mode",
     "presentation": "Hi! I'm ",
     "presentDesc": "I specialize in ",
     "webDev": "Web Development",
@@ -95,7 +99,7 @@
     "ianuaDate": "2024 - In Progress",
     "tragsatecDate": "Sept 2024 - Dec 2024",
     "medicalDate": "Mar 2024",
-    "nuoDate": "Jan 2024 - Feb 2025",
+    "nuoDate": "Jan 2024 - Feb 2024",
   
     "certifications": "Certifications & Courses",
 
@@ -103,7 +107,7 @@
     "certDateAprJul2024": "Apr - Jul 2024",
     "certDateFebMay2024": "Feb - May 2024",
     "certDateFebJul2023": "Feb - Jul 2023",
-    "certDateOct2020Ene2024": "Oct 2020 - Jan 2024",
+    "certDateOct2020Ene2024": "Oct 2020 - Jan 2023",
   
     "certAI900": "📜 AI-900: Microsoft Azure AI Fundamentals",
     "certBackendJava": "📜 Backend Java with Hibernate and Spring Boot - Programa Tu Futuro",

@@ -8,6 +8,7 @@
     css: "../icons/css.png",
     dotnet: "../icons/dot-net.png",
     eclipse: "../icons/eclipse.png",
+    entity: "../icons/entity.png",
     frontend: "../icons/frontend.png",
     hibernate: "../icons/hibernate.png",
     html: "../icons/html.png",

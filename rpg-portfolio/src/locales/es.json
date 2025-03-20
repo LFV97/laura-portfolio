@@ -7,11 +7,15 @@
     "language": "English",
     "chooseMode": "Elige un modo",
     "changeMode": "Cambiar Modo",
+    "classicModeDesc": "Un diseño moderno y profesional con una experiencia fluida y estilizada.",
+    "rpgModeDesc": "Sumérgete en una interfaz inspirada en videojuegos con elementos interactivos.",
     "profile": {
       "name": "🧙‍♂️ Laura - Desarrolladora Web",
       "description": "Aventurera del código con experiencia en React, Three.js y más.",
       "description_": "Soy un desarrollador web apasionado por la creación de experiencias digitales."
     },
+    "light-mode": "Modo claro",
+    "dark-mode": "Modo oscuro",
     "presentation": "¡Hola! Soy ",
     "presentDesc": "Me especializo en ",
     "webDev": "Desarrollo Web",
@@ -103,7 +107,7 @@
   "certDateAprJul2024": "Abr - Jul 2024",
   "certDateFebMay2024": "Feb - May 2024",
   "certDateFebJul2023": "Feb - Jul 2023",
-  "certDateOct2020Ene2024": "Oct 2020 - Ene 2024",
+  "certDateOct2020Ene2024": "Oct 2020 - Ene 2023",
 
   "certAI900": "📜 AI-900: Microsoft Azure AI Fundamentals",
   "certBackendJava": "📜 Backend Java con Hibernate y Spring Boot - Programa Tu Futuro",

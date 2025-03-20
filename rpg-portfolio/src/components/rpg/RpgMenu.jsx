@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FaBars, FaTimes } from "react-icons/fa"; 
 import useStore from "../../store";
-import "../../App.css";
+import "../../App.css"; 
 
 export default function RpgMenu({ currentSection, setSection }) {
   const { t } = useTranslation();
@@ -27,8 +27,7 @@ export default function RpgMenu({ currentSection, setSection }) {
     <div className="relative">
       {/* 📱 Botón de menú en móviles */}
       <button 
-        // className="lg:hidden bg-transparent text-white p-3 rounded-md fixed top-[5%] left-[5%] z-50"
-        className="xl:hidden bg-transparent text-white p-3 rounded-md fixed top-[5%] left-[5%] z-50"
+        className="menu-button hidden-1440"
         onClick={() => setIsOpen(true)}
       >
         <FaBars size={24} />
@@ -42,14 +41,13 @@ export default function RpgMenu({ currentSection, setSection }) {
         ></div>
       )}
 
-     {/* 🖥️ Menú Principal */}
-     {/* ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 lg:block`} */}
-     <div
-        className={`fixed top-0 left-0 h-full w-64 bg-gray-950 text-white p-6 shadow-lg transform transition-transform duration-300 ease-in-out z-50
-        ${isOpen ? "translate-x-0" : "-translate-x-full"} xl:-translate-x-0 xl:hidden`}
+      {/* 🖥️ Menú Principal */}
+      <div
+        className={`rpg-menu fixed top-0 left-0 h-full w-64 bg-gray-950 text-white p-6 shadow-lg transition-transform duration-300 ease-in-out z-50 
+        ${isOpen ? "menu-open" : ""}`}
       >
         {/* ❌ Botón para cerrar el menú en móviles */}
-        <button className="absolute top-4 right-4 text-white xl:hidden" onClick={() => setIsOpen(false)}>
+        <button className="absolute top-4 right-4 text-white hidden-1440" onClick={() => setIsOpen(false)}>
           <FaTimes size={24} />
         </button>
 

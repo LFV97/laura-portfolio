@@ -56,7 +56,7 @@ export default function ClassicContainer() {
                 <section id="about-me"><ClassicLore /></section>
                 <section id="skills"><ClassicSkills /></section>
                 <section id="projects"><ClassicProjects /></section>
-                <section id="resume"><ClassicExperience /></section>
+                <section id="resume"><ClassicExperience darkMode={darkMode} /></section>
                 <section id="contact"><ClassicContact /></section>
             </div>
         </div>

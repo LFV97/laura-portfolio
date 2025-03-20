@@ -85,7 +85,7 @@ export default function ClassicContact() {
                 ></textarea>
                 <button
                     type="submit"
-                    className="w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition-all duration-300"
+                    className="btn-classic w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition-all duration-300"
                 >
                     {t("contact.send")}
                 </button>
