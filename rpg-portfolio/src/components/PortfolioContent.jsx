@@ -11,15 +11,13 @@ export default function PortfolioContent() {
    
     return (
       <div className={`min-w-screen min-h-screen flex items-center justify-center ${theme === "rpg" ? "bg-gray-950 text-white" : "bg-white text-black"}`}>
-      {/* <div className={`min-w-screen min-h-screen flex items-center justify-center bg-gray-950 text-white`}> */}
-        <ClassicContainer />
-        {/* {theme === "rpg" ? (
+        {theme === "rpg" ? (
           <RpgContainer />
         ) : (
-          <div className="py-8 w-full text-center">
+          <div className="full-classic py-8 w-full text-center">
             <ClassicContainer />
           </div>
-        )} */}
+      )}
       </div>
     );
   }

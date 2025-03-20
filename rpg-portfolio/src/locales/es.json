@@ -12,13 +12,28 @@
       "description": "Aventurera del código con experiencia en React, Three.js y más.",
       "description_": "Soy un desarrollador web apasionado por la creación de experiencias digitales."
     },
+    "presentation": "¡Hola! Soy ",
+    "presentDesc": "Me especializo en ",
+    "webDev": "Desarrollo Web",
+    "ui": "Diseño UI",
+    "interactivity": "Interactividad",
     "menu": {
-      "lore": "Historia",
+      "lore": "Sobre mí",
       "skills": "Habilidades",
       "resume": "Currículum",
       "projects": "Proyectos",
       "contact": "Contacto",
       "changeMode": "Cambiar Modo"
+    },
+    "menuC": {
+      "title": "Mi Portfolio",
+      "lore": "Sobre mí",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "resume": "Currículum",
+      "contact": "Contacto",
+      "changeMode": "Cambiar Modo",
+      "language": "Cambiar Idioma"
     },
     "hud": {
       "title": "🎮 LFV RPG Style"
@@ -153,7 +168,7 @@
     "webContent": "Descubrí mi interés por el desarrollo web a través de distintos cursos y formaciones. Completé el programa 'Programa Tu Futuro' con Accenture, donde aprendí Java y Spring Boot, así como el desarrollo de aplicaciones con tecnologías modernas. También realicé cursos de C# con Azure y me capacité en frontend con herramientas como React, Bootstrap y TailwindCSS. Actualmente, continúo perfeccionando mis conocimientos en tecnologías web y explorando nuevas herramientas.",
 
     "experiencesTitle": "🌍 Experiencias Claves",
-    "experiencesContent": "He participado en distintas experiencias que han moldeado mi perfil profesional. En 2023, me uní a la piscina de 42 Madrid, donde reforcé mis habilidades en resolución de problemas y trabajo en equipo. Trabajé como desarrolladora frontend en NÜO Planet y como backend en Tragsatec, lo que me permitió aplicar mis conocimientos en entornos profesionales. Además, he realizado mentorías y cursos especializados en 3D y desarrollo de videojuegos para ayudar a otros a aprender sobre estas áreas.",
+    "experiencesContent": "He participado en distintas experiencias que han moldeado mi perfil profesional. En 2023, me uní a la piscina de 42 Madrid, donde reforcé mis habilidades en resolución de problemas y trabajo en equipo. Trabajé como desarrolladora frontend en NÜO Planet y como backend en Tragsatec, lo que me permitió aplicar mis conocimientos en entornos profesionales. Además, he realizado mentorías y cursos especializados en 3D y desarrollo de videojuegos para seguir profundizando mis conocimientos en esta área.",
 
     "currentTitle": "🚀 Actualmente en Aventura",
     "currentContent": "Actualmente, colaboro con Selene Games en el mantenimiento y actualización de su sitio web, mientras sigo desarrollando mi portafolio y buscando nuevas oportunidades en el desarrollo web y el modelado 3D. Mi meta es seguir combinando mis conocimientos técnicos y creativos para ofrecer experiencias digitales innovadoras."
@@ -182,23 +197,53 @@
   "resume": {
     "title": "Experiencia",
     "selene": {
-      "position": "Desarrolladora Web",
-      "description": "Mantenimiento y actualización del sitio web de Selene Games, un estudio indie de videojuegos."
+        "position": "Desarrolladora Web",
+        "description": "Mantenimiento y actualización del sitio web de Selene Games, un estudio indie de videojuegos."
+    },
+    "killa": {
+        "position": "Desarrolladora Web",
+        "description": "Desarrollo del sitio web en React y Bootstrap para la editorial KillaLibros."
+    },
+    "ianua": {
+        "position": "Diseñadora Web",
+        "description": "Rediseño del sitio web en WordPress (Divi) para Ianua Editora."
     },
     "tragsatec": {
-      "position": "Desarrolladora Backend (Prácticas)",
-      "description": "Contribución en la modernización de páginas web con Struts2, Hibernate y Bootstrap."
+        "position": "Desarrolladora Backend (Prácticas)",
+        "description": "Contribución en la modernización de páginas web con Struts2, Hibernate y Bootstrap."
+    },
+    "medical": {
+        "position": "Desarrolladora Web",
+        "description": "Desarrollo de un sitio web en WordPress (Divi) para un consultorio médico."
     },
     "nuoplanet": {
-      "position": "Desarrolladora Frontend",
-      "description": "Corrección de estilos y mejoras en React y TypeScript para una aplicación web."
+        "position": "Desarrolladora Frontend",
+        "description": "Corrección de estilos y mejoras en React y TypeScript para una aplicación web."
     },
-    "mentorship": {
-      "company": "Varios Cursos y Mentorías",
-      "position": "Estudiante / Mentorizada",
-      "description": "Cursos y mentorías especializadas en desarrollo web y modelado 3D con Three.js."
+    "certifications": {
+        "title": "Certificaciones y Cursos",
+        "ai900": {
+            "position": "AI-900: Microsoft Azure AI Fundamentals",
+            "description": "Fundamentos de Inteligencia Artificial en Azure."
+        },
+        "backendJava": {
+            "position": "Backend Java con Hibernate y Spring Boot",
+            "description": "Curso impartido por Programa Tu Futuro."
+        },
+        "unity3D": {
+            "position": "Desarrollo de Videojuegos y Realidad Virtual",
+            "description": "Curso IFCD28 con Unity 3D."
+        },
+        "webDev": {
+            "position": "Desarrollo de Aplicaciones Web",
+            "description": "Certificación IFCD0210 en tecnologías web modernas."
+        },
+        "animation3D": {
+            "position": "Animación 3D, Juegos y Entornos Interactivos",
+            "description": "Formación de FP Superior en desarrollo de videojuegos y animación 3D."
+        }
     }
-  },
+},
   "contact": {
     "title": "Contacto",
     "description": "¿Tienes un proyecto en mente? ¡Hablemos!",

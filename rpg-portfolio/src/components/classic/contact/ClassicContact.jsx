@@ -3,28 +3,67 @@ import { useTranslation } from "react-i18next";
 
 export default function ClassicContact() {
     const { t } = useTranslation();
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [form, setForm] = useState({ name: "", email: "", message: "" });
+    const [isSummoning, setIsSummoning] = useState(false);
+    const [status, setStatus] = useState({ success: null, message: "" });
+    const [successMessage, setSuccessMessage] = useState("");
+    const [success, setSuccess] = useState(false); // Asegurar que está definido
+    const [error, setError] = useState(false); // Asegurar que está definido
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        alert(t("contact.successMessage"));
-    };
+        const formData = new FormData(e.target); // Enviar como FormData
+        setIsSummoning(true);
+        setSuccess(false);
+        setError(false);
+
+    try {
+        const response = await fetch("https://lfv-dev.com/send-email.php", {
+            method: "POST",
+            body: formData, // Usar FormData en vez de JSON
+        });
+
+        const data = await response.json();
+        if (data.success) {
+            setSuccess(true);
+            setSuccessMessage(t("contact.successMessage"));
+            setForm({ name: "", email: "", message: "" });
+            e.target.reset();
+        } else {
+            setSuccessMessage(t("summon.error"));
+            setError(true);
+        }
+    } catch (err) {
+        console.error("Error:", err);
+        setError(true);
+    }
+
+    setIsSummoning(false);
+};
+    // const handleChange = (e) => {
+    //     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // };
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     alert(t("contact.successMessage"));
+    // };
 
     return (
         <section id="contact" className="classic-section transition-all duration-300 w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-orange-500 mb-4">{t("contact.title")}</h2>
-            <p className="text-gray-600 dark:text-gray-300">{t("contact.description")}</p>
+            <p>{t("contact.description")}</p>
 
-            <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
+            <form className="mt-6 mx-auto w-[75%] space-y-4 p-6" onSubmit={handleSubmit}>
                 <input
                     type="text"
                     name="name"
                     placeholder={t("contact.name")}
-                    className="w-full p-3 border rounded-md subcard"
+                    className="w-full p-3 border rounded-md"
                     onChange={handleChange}
                     required
                 />
@@ -32,7 +71,7 @@ export default function ClassicContact() {
                     type="email"
                     name="email"
                     placeholder={t("contact.email")}
-                    className="w-full p-3 border rounded-md subcard"
+                    className="w-full p-3 border rounded-md"
                     onChange={handleChange}
                     required
                 />
@@ -40,7 +79,7 @@ export default function ClassicContact() {
                     name="message"
                     rows="4"
                     placeholder={t("contact.message")}
-                    className="w-full p-3 border rounded-md subcard"
+                    className="w-full p-3 border rounded-md"
                     onChange={handleChange}
                     required
                 ></textarea>
@@ -51,6 +90,7 @@ export default function ClassicContact() {
                     {t("contact.send")}
                 </button>
             </form>
+            {successMessage && <p className="text-success mt-3">{successMessage}</p>}
         </section>
     );
 }

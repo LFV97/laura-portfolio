@@ -3,13 +3,22 @@ import gsap from "gsap";
 import { FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 import useStore from "../../store"; // Importamos el estado global
+import Logo from "../../../public/img/logo.png"
 import { useTranslation } from "react-i18next";
 
 export default function ClassicMenu({ setSection, darkMode, setDarkMode }) {
     const [menuOpen, setMenuOpen] = useState(false);
-    const btnRefs = useRef([]); // 🔹 Aseguramos que sea un array
+    const btnRefs = useRef([]);
     const { setTheme, toggleLanguage } = useStore(); 
     const { t } = useTranslation();
+
+    const sections = [
+        { id: "lore", label: t("menu.lore") },
+        { id: "skills", label: t("menu.skills") },
+        { id: "projects", label: t("menu.projects") },
+        { id: "resume", label: t("menu.resume") },
+        { id: "contact", label: t("menu.contact") },
+    ];
 
     const handleScroll = (sectionId) => {
         const section = document.getElementById(sectionId);
@@ -54,32 +63,35 @@ export default function ClassicMenu({ setSection, darkMode, setDarkMode }) {
 
     return (
         <nav className={`fixed top-0 left-0 w-full px-6 py-3 flex justify-between items-center z-50 transition-all duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800 shadow-md"}`}>
-            <h1 className="text-2xl font-bold cursor-pointer" onClick={() => handleScroll("lore")}>
-                Mi Portfolio
-            </h1>
+            {/* <h1 className="text-2xl font-bold cursor-pointer" onClick={() => handleScroll("lore")}>
+                {t("menuC.title")}
+            </h1> */}
+            <div className="w-15 p-1 cursor-pointer">
+                <img src={Logo} alt="logo LFV" />
+            </div>
 
             {/* Menú principal */}
-            <ul className="hidden md:flex gap-6">
-                {["lore", "skills", "projects", "resume", "contact"].map((section, index) => (
+            <ul className="hidden xl:flex gap-6">
+            {sections.map((section, index) => (
                     <li
-                        key={section}
+                        key={section.id}
                         ref={(el) => {
                             if (el) btnRefs.current[index] = el;
-                        }} // 🔹 Evita asignaciones de `null`
+                        }}
                         className="cursor-pointer flex items-center px-4 py-2 hover:text-orange-500 transition-all duration-300"
-                        onClick={() => handleScroll(section)}
+                        onClick={() => handleScroll(section.id)}
                     >
-                        {section === "lore" ? "Sobre mí" : section.charAt(0).toUpperCase() + section.slice(1)}
+                        {section.label}
                     </li>
                 ))}
-               <li>
+                <li>
                     <button onClick={() => setTheme("")} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
-                        {t("menu.changeMode")}
+                        {t("menuC.changeMode")}
                     </button>
                 </li>
                 <li>
                     <button onClick={toggleLanguage} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
-                        {t("language")}
+                        {t("menuC.language")}
                     </button>
                 </li>
                 <li>
@@ -88,7 +100,7 @@ export default function ClassicMenu({ setSection, darkMode, setDarkMode }) {
             </ul>
 
             {/* Menú móvil */}
-            <div className="md:hidden">
+            <div className="absolute top-4 right-8 xl:hidden">
                 <button ref={btnRefs} onClick={() => setMenuOpen(!menuOpen)}>
                     {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                 </button>
@@ -97,19 +109,25 @@ export default function ClassicMenu({ setSection, darkMode, setDarkMode }) {
             {/* Desplegable móvil */}
             {menuOpen && (
                 <ul className={`absolute top-14 left-0 w-full flex flex-col items-center gap-4 py-4 transition-all duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800 shadow-md"}`}>
-                    <li className="cursor-pointer flex items-center px-4 py-2 hover:text-orange-500" onClick={() => { handleScroll("about-me"); setMenuOpen(false); }}>Sobre mí</li>
-                    <li className="cursor-pointer flex items-center px-4 py-2 hover:text-orange-500" onClick={() => { handleScroll("skills"); setMenuOpen(false); }}>Habilidades</li>
-                    <li className="cursor-pointer flex items-center px-4 py-2 hover:text-orange-500" onClick={() => { handleScroll("projects"); setMenuOpen(false); }}>Proyectos</li>
-                    <li className="cursor-pointer flex items-center px-4 py-2 hover:text-orange-500" onClick={() => { handleScroll("resume"); setMenuOpen(false); }}>Currículum</li>
-                    <li className="cursor-pointer flex items-center px-4 py-2 hover:text-orange-500" onClick={() => { handleScroll("contact"); setMenuOpen(false); }}>Contacto</li>
+                    {sections.map((section) => (
+                        <li
+                            key={section.id}
+                            className="cursor-pointer flex items-center px-4 py-2 hover:text-orange-500"
+                            onClick={() => {
+                                handleScroll(section.id);
+                                setMenuOpen(false);
+                            }}
+                        >
+                            {section.label}
+                        </li>
+                    ))}
                     <li>
-                {/* 📌 Botones de Cambio de Modo e Idioma */}
-                    <button onClick={() => setTheme("")} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
-                        {t("changeMode")}
-                    </button>
-                    <button onClick={toggleLanguage} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
-                        {t("language")}
-                    </button>
+                        <button onClick={() => setTheme("")} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
+                            {t("menuC.changeMode")}
+                        </button>
+                        <button onClick={toggleLanguage} className="px-4 py-2 rounded-lg bg-gray-700 text-white hover:bg-gray-600">
+                            {t("menuC.language")}
+                        </button>
                     </li>
                     <li>
                         <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />

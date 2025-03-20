@@ -72,3 +72,53 @@
 .read-the-docs {
   color: #888;
 }
+
+
+/* 🎨 Fondo general del modo clásico */
+.full-classic {
+  background: radial-gradient(circle at center, rgba(255, 140, 0, 0.1), rgba(26, 26, 26, 1));
+  transition: background 0.8s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ✨ Animación sutil en el fondo */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.full-classic::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.15) 10%, rgba(0, 0, 0, 0.9) 80%);
+  animation: gradientAnimation 10s infinite alternate ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -2;
+}
+
+/* 🖱️ Efecto de seguimiento del ratón */
+.background-effect {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.background-effect div {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgba(255, 140, 0, 0.1);
+  filter: blur(50px);
+  transition: transform 0.1s ease-out;
+}

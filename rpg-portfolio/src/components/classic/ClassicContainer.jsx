@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ClassicMenu from "./ClassicMenu";
-import ClassicProfile from "./ClassicProfile";
 import ClassicLore from "./lore/ClassicLore";
 import ClassicSkills from "./skills/ClassicSkills";
 import ClassicProjects from "./projects/ClassicProjects";
 import ClassicExperience from "../resume/ClassicExperience";
 import ClassicContact from "./contact/ClassicContact";
 import "./styles/classic.css";
+import ParallaxBackground from "./ParallaxBackground";
+import HeroSection from "./Herosection";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,14 +42,17 @@ export default function ClassicContainer() {
             );
         });
     }, []);
+    
 
     return (
-        <div className={`classic-container transition-all duration-300 ${darkMode ? "dark-mode" : "light-mode"}`}>
+        <div className={`classic-container mx-auto transition-all duration-300 ${darkMode ? "dark-mode" : "light-mode"}`}>
             {/* Navbar fija con el botón de cambio de modo */}
+            {/* <ParallaxBackground /> */}
             <ClassicMenu setSection={setSection} darkMode={darkMode} setDarkMode={setDarkMode} />
 
             {/* Contenido dinámico */}
             <div className="content-container">
+                <section><HeroSection /></section>
                 <section id="about-me"><ClassicLore /></section>
                 <section id="skills"><ClassicSkills /></section>
                 <section id="projects"><ClassicProjects /></section>

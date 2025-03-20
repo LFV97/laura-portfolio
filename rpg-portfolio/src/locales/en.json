@@ -12,13 +12,28 @@
       "description": "Code adventurer with experience in React, Three.js, and more.",
       "description_": "I'm a web developer passionate about creating digital experiences."
     },
+    "presentation": "Hi! I'm ",
+    "presentDesc": "I specialize in ",
+    "webDev": "Web Development",
+    "ui": "UI Design",
+    "interactivity": "Interactivity",
     "menu": {
-      "lore": "Lore",
+      "lore": "About Me",
       "skills": "Skills",
       "resume": "Resume",
       "projects": "Projects",
       "contact": "Contact",
       "changeMode": "Change Mode"
+    },
+    "menuC": {
+      "title": "My Portfolio",
+      "lore": "About Me",
+      "skills": "Skills",
+      "projects": "Projects",
+      "resume": "Resume",
+      "contact": "Contact",
+      "changeMode": "Change Mode",
+      "language": "Change Language"
     },
     "hud": {
       "title": "🎮 LFV RPG Style"
@@ -153,7 +168,7 @@
       "webContent": "I discovered my interest in web development through various courses and training programs. I completed the 'Programa Tu Futuro' with Accenture, where I learned Java and Spring Boot, as well as modern application development. I also took C# courses with Azure and trained in frontend development using tools like React, Bootstrap, and TailwindCSS. Currently, I continue refining my web development skills and exploring new technologies.",
   
       "experiencesTitle": "🌍 Key Experiences",
-      "experiencesContent": "I've participated in various experiences that have shaped my professional profile. In 2023, I joined the 42 Madrid Piscine, where I strengthened my problem-solving and teamwork skills. I worked as a frontend developer at NÜO Planet and as a backend developer at Tragsatec, which allowed me to apply my knowledge in professional environments. Additionally, I have conducted mentorships and specialized courses in 3D and game development to help others learn about these fields.",
+      "experiencesContent": "I've participated in various experiences that have shaped my professional profile. In 2023, I joined the 42 Madrid Piscine, where I strengthened my problem-solving and teamwork skills. I worked as a frontend developer at NÜO Planet and as a backend developer at Tragsatec, which allowed me to apply my knowledge in professional environments. Additionally, I have conducted mentorships and specialized courses in 3D and game development to further expand my knowledge in this area.",
   
       "currentTitle": "🚀 Currently on a Quest",
       "currentContent": "I am currently collaborating with Selene Games on maintaining and updating their website while continuing to develop my portfolio and seeking new opportunities in web development and 3D modeling. My goal is to continue combining my technical and creative skills to deliver innovative digital experiences."
@@ -180,25 +195,55 @@
       }
     },
     "resume": {
-      "title": "Experience",
-      "selene": {
+    "title": "Experience",
+    "selene": {
         "position": "Web Developer",
-        "description": "Maintenance and update of the website for Selene Games, an indie game studio."
-      },
-      "tragsatec": {
+        "description": "Maintenance and update of Selene Games' website, an indie game studio."
+    },
+    "killa": {
+        "position": "Web Developer",
+        "description": "Development of the website in React and Bootstrap for KillaLibros publishing house."
+    },
+    "ianua": {
+        "position": "Web Designer",
+        "description": "Redesign of the website in WordPress (Divi) for Ianua Editora."
+    },
+    "tragsatec": {
         "position": "Backend Developer (Internship)",
         "description": "Contributed to modernizing web pages using Struts2, Hibernate, and Bootstrap."
-      },
-      "nuoplanet": {
-        "position": "Frontend Developer",
-        "description": "Fixed styles and improved UI in React and TypeScript for a web application."
-      },
-      "mentorship": {
-        "company": "Various Courses & Mentorships",
-        "position": "Student / Mentee",
-        "description": "Participated in specialized courses and mentorships in web development and 3D modeling with Three.js."
-      }
     },
+    "medical": {
+        "position": "Web Developer",
+        "description": "Development of a WordPress (Divi) website for a medical practice."
+    },
+    "nuoplanet": {
+        "position": "Frontend Developer",
+        "description": "Style fixes and improvements in React and TypeScript for a web application."
+    },
+    "certifications": {
+        "title": "Certifications & Courses",
+        "ai900": {
+            "position": "AI-900: Microsoft Azure AI Fundamentals",
+            "description": "Fundamentals of Artificial Intelligence in Azure."
+        },
+        "backendJava": {
+            "position": "Backend Java with Hibernate and Spring Boot",
+            "description": "Course provided by Programa Tu Futuro."
+        },
+        "unity3D": {
+            "position": "Video Game and Virtual Reality Development",
+            "description": "IFCD28 course with Unity 3D."
+        },
+        "webDev": {
+            "position": "Web Application Development",
+            "description": "IFCD0210 certification in modern web technologies."
+        },
+        "animation3D": {
+            "position": "3D Animation, Games, and Interactive Environments",
+            "description": "Advanced Vocational Training in video game development and 3D animation."
+        }
+    }
+},
     "contact": {
       "title": "Contact",
       "description": "Have a project in mind? Let's talk!",
