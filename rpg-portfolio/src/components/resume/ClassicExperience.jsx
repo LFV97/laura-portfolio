@@ -15,6 +15,13 @@ export default function ClassicExperience({ darkMode }) {
             icon: <FaBriefcase />,
         },
         {
+            date: t("certDateJanApr2025"),
+            position: t("resume.certifications.ai900.position"),
+            company: "Microsoft",
+            description: t("resume.certifications.ai900.description"),
+            icon: <FaGraduationCap />,
+        },
+        {
             date: t("killaDate"),
             position: t("resume.killa.position"),
             company: "Editorial KillaLibros",
@@ -41,13 +48,6 @@ export default function ClassicExperience({ darkMode }) {
             company: "Medical Website",
             description: t("resume.medical.description"),
             icon: <FaBriefcase />,
-        },
-        {
-            date: t("certDateJanApr2025"),
-            position: t("resume.certifications.ai900.position"),
-            company: "Microsoft",
-            description: t("resume.certifications.ai900.description"),
-            icon: <FaGraduationCap />,
         },
         {
             date: t("certDateAprJul2024"),

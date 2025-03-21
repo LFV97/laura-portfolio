@@ -14,13 +14,12 @@ import HeroSection from "./Herosection";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ClassicContainer() {
-    const [section, setSection] = useState("lore"); // Por defecto, mostrar Lore
+    const [section, setSection] = useState("lore");
     const [darkMode, setDarkMode] = useState(() => {
         return localStorage.getItem("darkMode") === "true";
     });
 
     useEffect(() => {
-        // Se asegura de que `darkMode` siempre se refleje en el contenedor
         localStorage.setItem("darkMode", darkMode);
     }, [darkMode]);
 
@@ -43,14 +42,10 @@ export default function ClassicContainer() {
         });
     }, []);
     
-
     return (
-        <div className={`classic-container mx-auto transition-all duration-300 ${darkMode ? "dark-mode" : "light-mode"}`}>
-            {/* Navbar fija con el botón de cambio de modo */}
-            {/* <ParallaxBackground /> */}
+        <div className={`min-h-screen classic-container transition-all duration-300`}>
             <ClassicMenu setSection={setSection} darkMode={darkMode} setDarkMode={setDarkMode} />
-
-            {/* Contenido dinámico */}
+            
             <div className="content-container">
                 <section><HeroSection /></section>
                 <section id="about-me"><ClassicLore /></section>
@@ -61,4 +56,5 @@ export default function ClassicContainer() {
             </div>
         </div>
     );
+
 }

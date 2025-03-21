@@ -58,7 +58,7 @@ export default function ClassicContact() {
             <h2 className="text-2xl font-bold text-orange-500 mb-4">{t("contact.title")}</h2>
             <p>{t("contact.description")}</p>
 
-            <form className="mt-6 mx-auto w-[75%] space-y-4 p-6" onSubmit={handleSubmit}>
+            <form className="mt-6 mx-auto space-y-4 p-6" onSubmit={handleSubmit}>
                 <input
                     type="text"
                     name="name"
