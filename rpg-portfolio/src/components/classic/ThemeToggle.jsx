@@ -19,30 +19,3 @@ export default function ThemeToggle({ darkMode, setDarkMode }) {
         </button>
     );
 }
-
-
-// import { useState, useEffect } from "react";
-
-// export default function ThemeToggle() {
-//     const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-//     useEffect(() => {
-//         if (darkMode) {
-//           document.body.classList.add("dark");
-//           document.body.classList.remove("light");
-//         } else {
-//           document.body.classList.add("light");
-//           document.body.classList.remove("dark");
-//         }
-//       }, [darkMode]);
-
-//     const toggleTheme = () => {
-//         setTheme(theme === "light" ? "dark" : "light");
-//     };
-
-//     return (
-//         <button onClick={toggleTheme} className="toggle-theme">
-//             {theme === "light" ? "🌙 Modo Oscuro" : "☀️ Modo Claro"}
-//         </button>
-//     );
-// }

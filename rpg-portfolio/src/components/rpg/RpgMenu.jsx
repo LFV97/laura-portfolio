@@ -25,7 +25,7 @@ export default function RpgMenu({ currentSection, setSection }) {
 
   return (
     <div className="relative">
-      {/* 📱 Botón de menú en móviles */}
+      {/* Botón de menú en móviles */}
       <button 
         className="menu-button hidden-1440"
         onClick={() => setIsOpen(true)}
@@ -33,7 +33,7 @@ export default function RpgMenu({ currentSection, setSection }) {
         <FaBars size={24} />
       </button>
 
-      {/* 🔹 Fondo Oscuro (Backdrop) */}
+      {/* Fondo Oscuro (Backdrop) */}
       {isOpen && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-50 z-40"
@@ -41,17 +41,17 @@ export default function RpgMenu({ currentSection, setSection }) {
         ></div>
       )}
 
-      {/* 🖥️ Menú Principal */}
+      {/* Menú Principal */}
       <div
         className={`rpg-menu fixed top-0 left-0 h-full w-64 bg-gray-950 text-white p-6 shadow-lg transition-transform duration-300 ease-in-out z-50 
         ${isOpen ? "menu-open" : ""}`}
       >
-        {/* ❌ Botón para cerrar el menú en móviles */}
+        {/* Botón para cerrar el menú en móviles */}
         <button className="absolute top-4 right-4 text-white hidden-1440" onClick={() => setIsOpen(false)}>
           <FaTimes size={24} />
         </button>
 
-        {/* 📌 Secciones del Menú */}
+        {/* Secciones del Menú */}
         <div className="mt-10 space-y-4">
           {menuItems.map((item) => (
             <button
@@ -70,7 +70,7 @@ export default function RpgMenu({ currentSection, setSection }) {
           ))}
         </div>
 
-        {/* 🌐 Botones de Cambio de Modo e Idioma */}
+        {/* Botones de Cambio de Modo e Idioma */}
         <div className="mt-6 space-y-2">
           <button onClick={() => setTheme("")} className="w-full px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition">
             {t("changeMode")}

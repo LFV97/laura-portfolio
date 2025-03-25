@@ -1,4 +1,5 @@
 @import "react-vertical-timeline-component/style.min.css";
+
 /* 🎨 Variables de Tema */
 :root {
     --primary-color: #ff8c00;
@@ -11,82 +12,74 @@
 
 /* 🌞 Modo Claro */
 .light-mode {
-    background: linear-gradient(135deg, #ffffff, #f5e1c0, #e8c77a);
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
     color: var(--text-light);
-    transition: background 0.8s ease-in-out;
+    --bg-color: rgba(247, 238, 233, 0.95);
+    --text-color: #222;
+    --title-color: #d36f11;
+    --card-bg: #ffffff;
+    --subcard-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --button-bg: #FF9800;
+    --button-hover: #E68A00;
 }
 
 /* 🌙 Modo Oscuro */
 .dark-mode {
     background: linear-gradient(135deg, #222831, #1b1f27, #131720);
-    color: #e0e0e0; /* Texto más claro para mejorar la legibilidad */
-    transition: background 0.8s ease-in-out, color 0.5s ease-in-out;
+    color: var(--text-dark);
+    --bg-color: rgba(40, 40, 40, 0.95);
+    --text-color: #f4f4f4;
+    --title-color: #d36f11;
+    --card-bg: #222;
+    --subcard-bg: #1e2939;
+    --card-shadow: rgba(255, 255, 255, 0.1);
+    --button-bg: #d36f11;
+    --button-hover: #b85e0c;
 }
 
-/* Ajustamos el resplandor del fondo en modo oscuro */
-.dark-mode .full-classic::before {
-    background: radial-gradient(circle, rgba(50, 50, 50, 0.4) 10%, rgba(10, 10, 10, 0.8) 80%);
-    animation: backgroundGlowDark 10s infinite alternate ease-in-out;
-}
-
-@keyframes backgroundGlowDark {
-    0% { opacity: 0.3; }
-    50% { opacity: 0.6; }
-    100% { opacity: 0.3; }
-}
-
-
-/* Botones y secciones en modo oscuro */
-.dark-mode .classic-container {
-    color: #f0f0f0; /* Ajuste de color de texto */
-}
-
-.dark-mode .classic-section {
-    background: rgba(40, 40, 40, 0.95); /* Más claridad en el fondo */
-    box-shadow: 0px 4px 15px rgba(255, 140, 0, 0.3);
-    border-left: 5px solid #ff8c00;
-}
-
-.dark-mode .classic-section:hover {
-    border-image: linear-gradient(45deg, #ff8c00, #ff4500) 1;
-}
-
-/* Ajustamos la opacidad de las tarjetas */
-.dark-mode .card {
-    background: rgba(45, 45, 45, 0.9);
-    box-shadow: 0px 4px 10px rgba(255, 140, 0, 0.2);
-}
-
-/* 🎨 Fondo general del modo clásico */
+/* 🔸 Fondo modo clásico */
 .full-classic {
     position: fixed;
     min-height: 100vh;
     overflow: hidden;
     background: radial-gradient(circle at center, rgba(255, 140, 0, 0.4), rgba(26, 26, 26, 1));
     animation: gradientAnimation 10s infinite alternate ease-in-out;
+    transition: background 0.8s ease-in-out;
+    position: relative;
 }
 
-/* ✨ Animación de degradado */
+.full-classic::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 140, 0, 0.15) 10%, rgba(0, 0, 0, 0.9) 80%);
+    animation: gradientAnimation 10s infinite alternate ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    z-index: -2;
+}
+
 @keyframes gradientAnimation {
-    0% { background: radial-gradient(circle at center, rgba(255, 140, 0, 0.4), rgba(26, 26, 26, 1)); }
-    50% { background: radial-gradient(circle at center, rgba(255, 180, 0, 0.5), rgba(20, 20, 20, 1)); }
-    100% { background: radial-gradient(circle at center, rgba(255, 140, 0, 0.4), rgba(26, 26, 26, 1)); }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-/* 🌞 Modo Claro: Fondo más luminoso y con degradado */
+/* 🌞 Modo claro clásico */
 .light-mode .full-classic {
     background: radial-gradient(circle at center, rgba(255, 240, 200, 0.8), rgba(255, 255, 255, 1));
     animation: lightGradientAnimation 10s infinite alternate ease-in-out;
 }
 
-/* 🌞 Animación para el modo claro */
 @keyframes lightGradientAnimation {
     0% { background: radial-gradient(circle at center, rgba(255, 240, 200, 0.8), rgba(255, 255, 255, 1)); }
     50% { background: radial-gradient(circle at center, rgba(255, 220, 180, 0.9), rgba(240, 240, 240, 1)); }
     100% { background: radial-gradient(circle at center, rgba(255, 240, 200, 0.8), rgba(255, 255, 255, 1)); }
 }
 
-/* ✨ Efecto de resplandor más visible en modo claro */
 .light-mode .full-classic::before {
     background: radial-gradient(circle, rgba(255, 200, 100, 0.3) 10%, rgba(255, 255, 255, 0.9) 80%);
     animation: backgroundGlowLight 10s infinite alternate ease-in-out;
@@ -98,172 +91,26 @@
     100% { opacity: 0.4; }
 }
 
-/* Ajustar los colores de los textos y secciones para que hagan contraste */
-.light-mode .classic-container {
-    color: #333; /* Texto más oscuro para que resalte en el fondo claro */
+/* 🌙 Efecto oscuro del resplandor */
+.dark-mode .full-classic::before {
+    background: radial-gradient(circle, rgba(50, 50, 50, 0.4) 10%, rgba(10, 10, 10, 0.8) 80%);
+    animation: backgroundGlowDark 10s infinite alternate ease-in-out;
 }
 
-.light-mode .classic-section {
-    background: rgba(247, 238, 233, 0.95);
-    box-shadow: 0px 4px 15px rgba(255, 180, 0, 0.5);
-    border-left: 5px solid #ff8c00;
+@keyframes backgroundGlowDark {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+    100% { opacity: 0.3; }
 }
 
-.light-mode .classic-section:hover {
-    border-image: linear-gradient(45deg, #ff8c00, #ff4500) 1;
-}
-
-/* ✨ Efecto de resplandor */
-.full-classic::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 140, 0, 0.15) 10%, rgba(0, 0, 0, 0.9) 80%);
-    animation: gradientAnimation 10s infinite alternate ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-    z-index: -10; /* 🔥 Baja el fondo detrás de todo */
-}
-
-
-
-
-/* BOTONES */
-
-.btn-classic {
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-
-/* button:hover {
-    filter: brightness(1.2);
-}
-
-.button {
-    background-color: var(--button-bg);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-} */
-
-.button {
-    background: linear-gradient(90deg, #ff8c00, #ff4500);
-    box-shadow: 0px 4px 10px rgba(255, 69, 0, 0.5);
-}
-
-.button:hover {
-    background: linear-gradient(90deg, #ff4500, #ff8c00);
-    transform: scale(1.05);
-    filter: brightness(1.2);
-    animation: glow 2s infinite alternate;
-}
-
-/* Estilos adicionales para los botones */
-/* .classic-menu button {
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background 0.3s;
-} */
-
-/* .classic-menu button:hover {
-    background: rgba(255, 255, 255, 0.1);
-} */
-
-
-
-
-
-
-/* HERO SECTION */
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    font-size: 2rem;
-}
-
-.highlight {
-    color: #ff8c00;
-    font-weight: bold;
-}
-
-.changing-text {
-    color: #ff4500;
-    font-weight: bold;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 25px rgba(255, 140, 0, 0.5);
-}
-
-
-
-
-
-
-
-/* 🎨 Variables de Tema */
-/* :root {
-    --bg-color: #F4F4F4;
-    --text-color: #ffffff;
-    --title-color: #d36f11;
-    --card-bg: #f7f7f7;
-    --card-shadow: rgba(0, 0, 0, 0.1);
-    --button-bg: #FF9800;
-    --button-hover: #E68A00;
-} */
-
-/* 🌙 Modo Oscuro */
-/* .dark-mode {
-    --bg-color: #1a1a1a;
-    --text-color: #f4f4f4;
-    --title-color: #d36f11;
-    --card-bg: #222;
-    --subcard-bg: #1e2939;
-    --card-shadow: rgba(255, 255, 255, 0.1);
-    --button-bg: #d36f11;
-    --button-hover: #b85e0c;
-} */
-
-/* 🌞 Modo Claro */
-/* .light-mode {
-    --bg-color: #f3f3f3;
-    --bg: #e2e2e2;
-    --subcard-bg: #ffffff;
-    --text-color: #222;
-} */
-
-/* 📦 SECCIONES */
+/* 📦 Secciones clásicas */
 .classic-container {
-    /* background: linear-gradient(-45deg, #1a1a2e, #16213e, #0f3460, #53354a); */
-    /* background-color: #f54a00; */
     background-size: 400% 400%;
     animation: gradientBG 10s ease infinite;
-    /* color: var(--text-color); */
-    transition: all 0.3s ease-in-out;
     width: 100%;
     max-width: 2400px;
     margin: 0 auto;
     padding: 2rem;
-    /* background-color: var(--bg-color); */
     transition: all 0.3s ease-in-out;
 }
 
@@ -272,12 +119,6 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
-
-/* .classic-section {
-    background-color: var(--card-bg);
-    box-shadow: 0px 4px 10px var(--card-shadow);
-} */
 
 .classic-section {
     max-width: 90%;
@@ -292,166 +133,23 @@
 
 .classic-section:hover {
     border-image: linear-gradient(45deg, #ff8c00, #ff4500) 1;
-    transition: all 0.5s ease-in-out;
-    /* transform: scale(1.01); */
 }
 
-.subcard {
-    color: var(--subcard-bg);
+/* 🃏 Tarjetas */
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px var(--card-shadow);
+    transition: transform 0.3s ease-in-out;
 }
 
-
-
-
-/* 🎨 Modo Claro */
-.light-mode {
-    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-    color: #222;
-    transition: background 0.8s ease-in-out;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px rgba(255, 140, 0, 0.5);
 }
 
-/* 🌙 Modo Oscuro */
-.dark-mode {
-    background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
-    color: #f4f4f4;
-    transition: background 0.8s ease-in-out;
-}
-
-/* 🎨 Fondo general del modo clásico */
-.full-classic {
-    overflow: hidden;
-    position: relative;
-}
-
-/* ✨ Animación de degradado */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-.full-classic::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 140, 0, 0.15) 10%, rgba(0, 0, 0, 0.9) 80%);
-    animation: gradientAnimation 10s infinite alternate ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-    z-index: -2;
-}
-
-/* 🖱️ Efecto de seguimiento del ratón */
-.background-effect {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.background-effect div {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background: rgba(255, 140, 0, 0.1);
-    filter: blur(50px);
-    transition: transform 0.1s ease-out;
-}
-
-/* 🌞 Ajuste de colores en modo claro */
-.light-mode .background-effect div {
-    background: rgba(255, 140, 0, 0.15);
-}
-
-/* 🌙 Ajuste de colores en modo oscuro */
-.dark-mode .background-effect div {
-    background: rgba(255, 140, 0, 0.05);
-}
-
-
-
-
-
-
-
-
-/* 🏷️ Títulos */
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-    color: var(--title-color);
-    font-weight: 700;
-}
-h2 {
-    color: #ff8c00; /* Naranja vibrante */
-    text-shadow: 2px 2px 10px rgba(255, 140, 0, 0.5);
-    font-size: 2rem;
-}
-
-h1 { font-size: 2.5rem; }
-h3 { font-size: 1.5rem; }
-
-
-
-/* 🎨 Fondo general del modo clásico */
-.full-classic {
-    background: radial-gradient(circle at center, rgba(255, 140, 0, 0.1), rgba(26, 26, 26, 1));
-    transition: background 0.8s ease-in-out;
-    overflow: hidden;
-    position: relative;
-}
-
-/* ✨ Animación sutil en el fondo */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-.full-classic::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 140, 0, 0.15) 10%, rgba(0, 0, 0, 0.9) 80%);
-    animation: gradientAnimation 10s infinite alternate ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-    z-index: -2;
-}
-
-/* 🖱️ Efecto de seguimiento del ratón */
-.background-effect {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.background-effect div {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background: rgba(255, 140, 0, 0.1);
-    filter: blur(50px);
-    transition: transform 0.1s ease-out;
-}
-
-
-
-
-
-/* 📜 Menú Clásico */
+/* 📜 Menú */
 .classic-menu {
     background: var(--card-bg);
     padding: 1rem;
@@ -475,116 +173,40 @@ h3 { font-size: 1.5rem; }
     color: var(--button-bg);
 }
 
-
-
-
-
-/* 🌗 Modo Oscuro/Claro Botón */
-.toggle-theme {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--text-color);
-    transition: all 0.3s;
+/* 🎯 Botones */
+.button {
+    background: linear-gradient(90deg, #ff8c00, #ff4500);
+    box-shadow: 0px 4px 10px rgba(255, 69, 0, 0.5);
 }
 
-.toggle-theme:hover {
-    color: var(--button-bg);
+.button:hover {
+    background: linear-gradient(90deg, #ff4500, #ff8c00);
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    animation: glow 2s infinite alternate;
 }
 
-
-
-
-
-/* 🎨 Carrusel */
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px; /* Ajusta según el tamaño del contenido */
-    overflow: hidden;
-    width: 100%;
+.btn-classic {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 
-.carousel {
-    display: flex;
-    align-items: center;
-    min-width: 200%;
+/* ✍️ Tipografías */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--title-color);
+    font-weight: 700;
 }
 
-/* 🌟 Iconos */
-.skill-item {
-    flex: 0 0 auto;
-    width: 100px; /* Tamaño ajustable */
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; text-shadow: 2px 2px 10px rgba(255, 140, 0, 0.5); }
+h3 { font-size: 1.5rem; }
 
-.skill-item img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
+p { color: var(--title-color); }
 
-
-
-
-/* SKILLS */
-
-/* .carousel-container {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-*/
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px;
-}
-
-/* 🎨 Carrusel */
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px; /* Ajusta según el tamaño del contenido */
-    overflow: hidden;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.carousel {
-    display: flex;
-    align-items: center;
-    min-width: 200%;
-}
-
-/* 🌟 Iconos */
-.skill-item {
-    flex: 0 0 auto;
-    width: 100px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-.skill-item img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-
-
-/* 🔹 Diseño Responsivo */
+/* 🎨 Responsivo */
 @media (max-width: 768px) {
     .classic-container {
         padding: 1rem;
@@ -596,9 +218,9 @@ h3 { font-size: 1.5rem; }
     }
 
     h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem;}
+    h2 { font-size: 1.5rem; }
 }
-@media (max-width: 500px) {
 
+@media (max-width: 500px) {
     h2 { font-size: 1.5rem; height: 90px; }
 }

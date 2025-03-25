@@ -8,7 +8,6 @@ import ClassicProjects from "./projects/ClassicProjects";
 import ClassicExperience from "../resume/ClassicExperience";
 import ClassicContact from "./contact/ClassicContact";
 import "./styles/classic.css";
-import ParallaxBackground from "./ParallaxBackground";
 import HeroSection from "./Herosection";
 
 gsap.registerPlugin(ScrollTrigger);

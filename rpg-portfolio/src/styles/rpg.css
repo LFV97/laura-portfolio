@@ -1,18 +1,3 @@
-/* .rpg-container {
-    border: 15px solid transparent;
-    border-image-source: url('../../public/img/border_01.png'); */
-    /* background-image: url('../../public/img/border_04.jpeg'); */
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: stretch; */
-    /* border-image-slice: 30;
-    border-image-repeat: repeat;
-    background-color: #f3e0c0;
-    padding: 20px;
-    border-radius: 15px; 
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  } */
-
 @media screen and (min-width: 1023px) and (max-width: 1441px) {
     .rpg-container {
         width: 90%;
@@ -40,9 +25,6 @@
 
 
 
-
-
-/* 🌐 Mostrar el menú completo en pantallas grandes (1441px en adelante) */
 /* 🌐 Menú fijo desde 1441px en adelante */
 @media (min-width: 1441px) {
     .rpg-menu {
@@ -59,7 +41,7 @@
         z-index: 50;
     }
     .menu-button {
-        display: none !important;  /* Oculta el botón hamburguesa en pantallas grandes */
+        display: none !important;
     }
     .hidden-1440 {
         display: none !important;
@@ -70,14 +52,14 @@
 @media (max-width: 1440px) {
     .rpg-menu {
         transform: translateX(-100%);
-        display: none !important; /* Se oculta por defecto */
+        display: none !important;
     }
     .menu-open {
         display: block !important;
         transform: translateX(0);
     }
     .menu-button {
-        display: block !important; /* Se muestra el botón de hamburguesa */
+        display: block !important;
         position: fixed;
         top: 20px;
         left: 20px;

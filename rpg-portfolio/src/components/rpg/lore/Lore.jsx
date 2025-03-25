@@ -39,14 +39,12 @@ export default function Lore() {
 
   return (
     <div className="w-full max-w-l mx-auto bg-gray-800 text-white p-8 rounded-lg shadow-lg border-2 border-yellow-500 relative">
-    {/* // <div className="relative flex items-center justify-center w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-52 xl:h-52"> */}
-      {/* 📖 Título */}
+      {/* Título */}
       <h1 className="text-3xl font-bold justify-center text-yellow-400 flex items-center gap-2">
         <FaBook /> {t("lore.title")}
       </h1>
 
-      {/* 📜 Descripción General */}
-      {/* <p className="mt-4 text-gray-300">{t("lore.summary")}</p> */}
+      {/* Descripción General */}
       <p className="mt-4 text-gray-300">
         {t("lore.summary").split("\\n").map((line, index) => (
             <span key={index}>
@@ -56,7 +54,7 @@ export default function Lore() {
         ))}
         </p>
 
-      {/* 📖 Secciones Expansibles */}
+      {/* Secciones Expansibles */}
       <div className="mt-6 space-y-4">
         {loreSections.map((section, index) => (
           <div key={index} className="border border-yellow-500 rounded-lg p-4">

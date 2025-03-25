@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { FaGithub, FaMagic, FaPaperPlane } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 
 export default function ClassicContact() {
     const { t } = useTranslation();
@@ -24,7 +26,7 @@ export default function ClassicContact() {
     try {
         const response = await fetch("https://lfv-dev.com/send-email.php", {
             method: "POST",
-            body: formData, // Usar FormData en vez de JSON
+            body: formData,
         });
 
         const data = await response.json();
@@ -44,14 +46,6 @@ export default function ClassicContact() {
 
     setIsSummoning(false);
 };
-    // const handleChange = (e) => {
-    //     setFormData({ ...formData, [e.target.name]: e.target.value });
-    // };
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     alert(t("contact.successMessage"));
-    // };
 
     return (
         <section id="contact" className="classic-section transition-all duration-300 w-5xl mx-auto">
@@ -91,6 +85,29 @@ export default function ClassicContact() {
                 </button>
             </form>
             {successMessage && <p className="text-success mt-3">{successMessage}</p>}
+            <div className="mt-3 justify-center gap-4">
+                <div className="mt-6 text-gray-400 text-md">{t("classic.whereToFind")}</div>
+                    <div className="flex mx-auto justify-center">
+                        <a
+                            className="flex p-3 justify-center"
+                            href="https://www.linkedin.com/in/laura-frias-viana/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{color: "#FF8C00"}}
+                        >
+                            <FaLinkedin size={40} />
+                        </a>
+                        <a
+                            className="flex p-3 justify-center"
+                            href="https://github.com/LFV97"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{color: "#FF8C00"}}
+                        >
+                            <FaGithub size={40} />
+                        </a>
+                    </div>
+            </div>
         </section>
     );
 }

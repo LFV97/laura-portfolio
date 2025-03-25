@@ -16,7 +16,7 @@
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   color: white;
-  background-color: #1f1f1f; /* Color base del botón */
+  background-color: #1f1f1f;
   border: 2px solid transparent;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .btn.active {
-  background-color: #3a3a3a; /* Fondo más claro para el activo */
+  background-color: #3a3a3a;
   border: white 2px solid;
   box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
 }
@@ -43,20 +43,18 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -71,96 +69,4 @@
 
 .read-the-docs {
   color: #888;
-}
-
-
-/* 🎨 Fondo general del modo clásico */
-.full-classic {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-  background: radial-gradient(circle at center, rgba(255, 140, 0, 0.4), rgba(26, 26, 26, 1));
-  animation: gradientAnimation 10s infinite alternate ease-in-out;
-}
-
-/* ✨ Animación de degradado */
-@keyframes gradientAnimation {
-  0% { background: radial-gradient(circle at center, rgba(255, 140, 0, 0.4), rgba(26, 26, 26, 1)); }
-  50% { background: radial-gradient(circle at center, rgba(255, 180, 0, 0.5), rgba(20, 20, 20, 1)); }
-  100% { background: radial-gradient(circle at center, rgba(255, 140, 0, 0.4), rgba(26, 26, 26, 1)); }
-}
-
-/* 🌞 Modo Claro: Fondo más luminoso y con degradado */
-.light-mode .full-classic {
-  background: radial-gradient(circle at center, rgba(200, 215, 255, 0.8), rgba(255, 255, 255, 1));
-  animation: lightGradientAnimation 10s infinite alternate ease-in-out;
-}
-
-/* 🌞 Animación para el modo claro */
-@keyframes lightGradientAnimation {
-  0% { background: radial-gradient(circle at center, rgba(255, 240, 200, 0.8), rgba(255, 255, 255, 1)); }
-  50% { background: radial-gradient(circle at center, rgba(255, 220, 180, 0.9), rgba(240, 240, 240, 1)); }
-  100% { background: radial-gradient(circle at center, rgba(255, 240, 200, 0.8), rgba(255, 255, 255, 1)); }
-}
-
-/* ✨ Efecto de resplandor más visible en modo claro */
-.light-mode .full-classic::before {
-  background: radial-gradient(circle, rgba(255, 200, 100, 0.3) 10%, rgba(179, 34, 34, 0.9) 80%);
-  animation: backgroundGlowLight 10s infinite alternate ease-in-out;
-}
-
-@keyframes backgroundGlowLight {
-  0% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-  100% { opacity: 0.4; }
-}
-
-/* Ajustar los colores de los textos y secciones para que hagan contraste */
-.light-mode .classic-container {
-  color: #333; /* Texto más oscuro para que resalte en el fondo claro */
-}
-
-.light-mode .classic-section {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0px 4px 15px rgba(255, 180, 0, 0.5);
-  border-left: 5px solid #ff8c00;
-}
-
-.light-mode .classic-section:hover {
-  border-image: linear-gradient(45deg, #ff8c00, #ff4500) 1;
-}
-
-/* ✨ Efecto de resplandor */
-.full-classic::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255, 140, 0, 0.15) 10%, rgba(0, 0, 0, 0.9) 80%);
-  animation: gradientAnimation 10s infinite alternate ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  z-index: -10; /* 🔥 Baja el fondo detrás de todo */
-}
-
-/* 🖱️ Efecto de seguimiento del ratón */
-.background-effect {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.background-effect div {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background: rgba(255, 140, 0, 0.1);
-  filter: blur(50px);
-  transition: transform 0.1s ease-out;
 }

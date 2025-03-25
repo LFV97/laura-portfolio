@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaMagic, FaPaperPlane } from "react-icons/fa";
+import { FaGithub, FaMagic, FaPaperPlane } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 
@@ -18,7 +18,7 @@ export default function SummonContact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.target); // Enviar como FormData
+    const formData = new FormData(e.target);
     setIsSummoning(true);
     setSuccess(false);
     setError(false);
@@ -26,7 +26,7 @@ export default function SummonContact() {
     try {
         const response = await fetch("https://lfv-dev.com/send-email.php", {
             method: "POST",
-            body: formData, // Usar FormData en vez de JSON
+            body: formData,
         });
 
         const data = await response.json();
@@ -47,39 +47,6 @@ export default function SummonContact() {
     setIsSummoning(false);
 };
 
-
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setIsSummoning(true);
-  //   setStatus({ success: null, message: "" });
-
-  //   // Crear FormData para enviar los datos en el formato esperado por PHP
-  //   const formData = new FormData();
-  //   formData.append("name", form.name);
-  //   formData.append("email", form.email);
-  //   formData.append("message", form.message);
-
-  //   try {
-  //     const response = await fetch("https://lfv-dev.com/send_email.php", {
-  //       method: "POST",
-  //       body: formData, // Enviar como FormData
-  //     });
-
-  //     const data = await response.json();
-  //     if (data.success) {
-  //       setStatus({ success: true, message: t("summon.success") });
-  //       setForm({ name: "", email: "", message: "" });
-  //     } else {
-  //       setStatus({ success: false, message: t("summon.error") });
-  //     }
-  //   } catch (err) {
-  //     console.error("Error:", err);
-  //     setStatus({ success: false, message: t("summon.error") });
-  //   }
-
-  //   setIsSummoning(false);
-  // };
 
   return (
     <div className="w-full max-w-l mx-auto bg-gray-800 text-white p-8 rounded-lg shadow-lg border-2 border-purple-500 relative text-center">
@@ -144,72 +111,26 @@ export default function SummonContact() {
 
       <div className="mt-3 justify-center gap-4">
         <div className="mt-6 text-gray-400 text-md">{t("summon.whereToFind")}</div>
-        <a
-          className="flex p-3 justify-center"
-          href="https://www.linkedin.com/in/laura-frias-viana/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin size={40} />
-        </a>
+        <div className="flex mx-auto justify-center">
+          <a
+            className="flex p-3 justify-center"
+            href="https://www.linkedin.com/in/laura-frias-viana/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin size={40} />
+          </a>
+          <a
+            className="flex p-3 justify-center"
+            href="https://github.com/LFV97"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub size={40} />
+          </a>
+        </div>
       </div>
       <p className="mt-6 text-gray-400 text-sm">{t("summon.footer")}</p>
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// <?php
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\Exception;
-
-// require 'vendor/autoload.php';
-
-// header("Access-Control-Allow-Origin: *");
-// header("Access-Control-Allow-Methods: POST");
-// header("Access-Control-Allow-Headers: Content-Type");
-
-// $data = json_decode(file_get_contents("php://input"), true);
-
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $name = $data["name"];
-//     $email = $data["email"];
-//     $message = $data["message"];
-
-//     $mail = new PHPMailer(true);
-//     try {
-//         $mail->isSMTP();
-//         $mail->Host = 'smtp.gmail.com';
-//         $mail->SMTPAuth = true;
-//         $mail->Username = 'contact@lfv-dev.com'; 
-//         $mail->Password = 'REL_131208659297';
-//         $mail->SMTPSecure = 'tls';
-//         $mail->Port = 587;
-
-//         $mail->setFrom($email, $name);
-//         $mail->addAddress('tu_correo@gmail.com');
-
-//         $mail->isHTML(true);
-//         $mail->Subject = "Nuevo mensaje de $name";
-//         $mail->Body = "Mensaje: <br> $message <br><br> Contacto: $email";
-
-//         $mail->send();
-//         echo json_encode(["success" => true, "message" => "Correo enviado"]);
-//     } catch (Exception $e) {
-//         echo json_encode(["success" => false, "message" => "Error: {$mail->ErrorInfo}"]);
-//     }
-// }
-// ?>

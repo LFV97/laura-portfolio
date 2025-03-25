@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import { FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
-import useStore from "../../store"; // Importamos el estado global
+import useStore from "../../store";
 import Logo from "../../../public/img/logo.png"
 import { useTranslation } from "react-i18next";
 
@@ -30,7 +30,7 @@ export default function ClassicMenu({ setSection, darkMode, setDarkMode }) {
 
     // 🟢 Agregamos una verificación para asegurarnos de que hay elementos en el array antes de iterar
     useEffect(() => {
-        if (!btnRefs.current.length) return; // 🔹 Previene errores si el array está vacío
+        if (!btnRefs.current.length) return;
 
         btnRefs.current.forEach((btn) => {
             if (!btn) return;
@@ -63,9 +63,6 @@ export default function ClassicMenu({ setSection, darkMode, setDarkMode }) {
 
     return (
         <nav className={`fixed top-0 left-0 w-full px-6 py-3 flex justify-between items-center z-50 transition-all duration-300 ${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800 shadow-md"}`}>
-            {/* <h1 className="text-2xl font-bold cursor-pointer" onClick={() => handleScroll("lore")}>
-                {t("menuC.title")}
-            </h1> */}
             <div className="w-15 p-1 cursor-pointer">
                 <img src={Logo} alt="logo LFV" />
             </div>

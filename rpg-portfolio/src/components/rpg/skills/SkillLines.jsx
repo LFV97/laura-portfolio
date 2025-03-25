@@ -29,36 +29,3 @@ export default function SkillLines({ skills }) {
     </>
     )
   }
-// return (
-//   <>
-//     {connections.map(([from, to], index) => {
-//       const start = skills.find((s) => s.id === from)?.position;
-//       const end = skills.find((s) => s.id === to)?.position;
-    
-//       if (!start || !end) return null;
-
-//         // Convertir coordenadas a píxeles
-//         const midX = (start[0] + end[0]) / 2;
-//         const midY = (start[1] + end[1]) / 2;
-//         const width = Math.sqrt(
-//           Math.pow(end[0] - start[0], 2) + Math.pow(end[1] - start[1], 2)
-//         );
-
-//         return (
-//           <Html position={[midX, midY, 0]} key={index}>
-//             <div
-//               className="glowing-line"
-//               style={{
-//                 width: `${width * 20}px`,
-//                 transform: `rotate(${Math.atan2(
-//                   end[1] - start[1],
-//                   end[0] - start[0]
-//                 )}rad)`,
-//               }}
-//             ></div>
-//           </Html>
-//         );
-//       })}
-//     </>
-//   );
-// }

@@ -95,7 +95,7 @@
   "nuoPlanet": "Desarrolladora Frontend React.",
 
   "seleneDate": "Feb 2025 - Presente",
-  "killaDate": "Dec 2024 - Jan 2025",
+  "killaDate": "Dec 2024 - Actualmente",
   "ianuaDate": "2024 - En Progreso",
   "tragsaDate": "Sept 2024 - Dec 2024",
   "medicalDate": "Mar 2024",
@@ -155,6 +155,9 @@
     "whereToFind": "También puedes encontrarme en estas áreas mágicas:",
     "footer": "La magia del código siempre está disponible para ayudar."    
   },
+  "classic": {
+    "whereToFind": "También puedes encontrarme:"
+  },
   "lore": {
     "title": "Historia de la Aventurera",
     "summary": "Soy Laura, una desarrolladora web con un gran interés en el 3D y la programación. Mi camino ha sido una travesía entre el arte y la tecnología, desde la pastelería hasta la creación de sitios web modernos e interactivos.\\nMe encanta aprender y siempre estoy en busca de nuevos retos, combinando diseño, animación y desarrollo para crear experiencias digitales únicas. ¡Explora mi historia y descubre cómo cada etapa me ha llevado a donde estoy hoy!",
@@ -206,7 +209,7 @@
     },
     "killa": {
         "position": "Desarrolladora Web",
-        "description": "Desarrollo del sitio web en React y Bootstrap para la editorial KillaLibros."
+        "description": "Desarrollo y mantenimiento del sitio web en React y Bootstrap para la editorial KillaLibros."
     },
     "ianua": {
         "position": "Diseñadora Web",
@@ -267,8 +270,8 @@
     },
     "killa": {
       "title": "Editorial KillaLibros",
-      "date": "Dic 2024 - Ene 2025",
-      "description": "Diseño y desarrollo del sitio web para la editorial KillaLibros, con funcionalidades avanzadas de búsqueda de libros."
+      "date": "Dic 2024 - Actualmente",
+      "description": "Diseño, desarrollo y mantenimiento del sitio web para la editorial KillaLibros, con funcionalidades avanzadas de búsqueda de libros."
     },
     "ianua": {
       "title": "Ianua Editora",

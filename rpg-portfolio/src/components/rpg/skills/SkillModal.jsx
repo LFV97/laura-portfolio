@@ -2,7 +2,6 @@ export default function SkillModal({ skill, onClose }) {
     const skillDetails = {
       Java: ["Spring", "Hibernate", "Struts2"],
       ".NET C#": ["Entity Framework", "Azure AI-900"],
-    //   Python: ["Django", "Flask"],
     };
   
     return (

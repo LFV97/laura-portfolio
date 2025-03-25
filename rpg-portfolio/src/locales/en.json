@@ -95,7 +95,7 @@
     "nuoPlanet": "Frontend React Developer.",
 
     "seleneDate": "Feb 2025 - Currently",
-    "killaDate": "Dec 2024 - Jan 2025",
+    "killaDate": "Dec 2024 - Currently",
     "ianuaDate": "2024 - In Progress",
     "tragsatecDate": "Sept 2024 - Dec 2024",
     "medicalDate": "Mar 2024",
@@ -154,6 +154,9 @@
       "button": "Summon the Mage",
       "whereToFind": "You can also find me on these magic areas:",
       "footer": "The magic of code is always here to help."
+    },
+    "classic": {
+      "whereToFind": "You can also find me:"
     },
     "lore": {
       "title": "Adventurer's Story",
@@ -267,8 +270,8 @@
       },
       "killa": {
         "title": "KillaLibros Publishing",
-        "date": "Dec 2024 - Jan 2025",
-        "description": "Website design and development for KillaLibros, featuring advanced book search functionalities."
+        "date": "Dec 2024 - Currently",
+        "description": "Website design, development and maintenance for KillaLibros, featuring advanced book search functionalities."
       },
       "ianua": {
         "title": "Ianua Editora",
